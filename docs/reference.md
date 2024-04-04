@@ -19,7 +19,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -29,7 +29,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -39,7 +39,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -49,7 +49,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -62,7 +62,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
       members:
@@ -74,7 +74,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true   
       docstring_section_style: list 
       members:
@@ -88,7 +88,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true
       docstring_section_style: list
       members:
@@ -115,7 +115,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -125,7 +125,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -135,7 +135,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -147,7 +147,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -157,7 +157,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -167,7 +167,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -179,7 +179,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
       members:
@@ -191,7 +191,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true   
       docstring_section_style: list 
       members:
@@ -217,7 +217,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -227,7 +227,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -237,7 +237,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
             
@@ -247,7 +247,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -257,7 +257,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -267,7 +267,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
   
@@ -279,7 +279,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -289,7 +289,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -299,7 +299,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
             
@@ -309,7 +309,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -319,7 +319,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -329,7 +329,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
      
@@ -339,7 +339,7 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
 
@@ -349,6 +349,6 @@
       docstring_style: numpy
       show_root_heading: true
       heading_level: 3
-      show_source: true
+      show_source: false
       summary: true    
       docstring_section_style: list
