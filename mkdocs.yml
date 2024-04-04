@@ -1,0 +1,56 @@
+site_name: molecule_lib Documentation
+
+nav:
+  - Home : index.md
+  - Read Functions : read_functions.md
+  - API Reference : reference.md
+  - Todo Page: todo.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
+    - navigate.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+
+plugins:
+  - search
+  - mkdocstrings
+
+
+
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:jeremynschroeder@gmail.com
+    - icon: fontawesome/solid/t
+      link: https://www.depts.ttu.edu/me/combustionlab/
+
+copyright: |
+  &copy; 2024 Jeremy Schroeder
