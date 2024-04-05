@@ -1,0 +1,4292 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../read_functions/">
+      
+      
+        <link rel="next" href="../todo/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>API Reference - molecule_lib Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reference-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="molecule_lib Documentation" class="md-header__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            molecule_lib Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../read_functions/" class="md-tabs__link">
+        
+  
+    
+  
+  Read Functions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../todo/" class="md-tabs__link">
+        
+  
+    
+  
+  Todo Page
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="molecule_lib Documentation" class="md-nav__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    molecule_lib Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../read_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Read Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    API Reference
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    API Reference
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#globals-docstrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Globals Docstrings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Globals Docstrings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.GLOBALS_DOCSTRINGS" class="md-nav__link">
+    <span class="md-ellipsis">
+      GLOBALS_DOCSTRINGS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Math functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Math functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.csc" class="md-nav__link">
+    <span class="md-ellipsis">
+      csc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.sec" class="md-nav__link">
+    <span class="md-ellipsis">
+      sec
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.cot" class="md-nav__link">
+    <span class="md-ellipsis">
+      cot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib._isfloatstr" class="md-nav__link">
+    <span class="md-ellipsis">
+      _isfloatstr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-unitcell-molecule-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      ABC (Unitcell) Molecule Section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ABC (Unitcell) Molecule Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCCoord" class="md-nav__link">
+    <span class="md-ellipsis">
+      ABCCoord
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ABCCoord">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCCoord.line" class="md-nav__link">
+    <span class="md-ellipsis">
+      line
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.LatticeMatrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      LatticeMatrix
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LatticeMatrix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.LatticeMatrix.getabc" class="md-nav__link">
+    <span class="md-ellipsis">
+      getabc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.LatticeMatrix.getanglesdeg" class="md-nav__link">
+    <span class="md-ellipsis">
+      getanglesdeg
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.LatticeMatrix.getanglesrad" class="md-nav__link">
+    <span class="md-ellipsis">
+      getanglesrad
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule" class="md-nav__link">
+    <span class="md-ellipsis">
+      ABCMolecule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ABCMolecule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.add_coords" class="md-nav__link">
+    <span class="md-ellipsis">
+      add_coords
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="add_coords">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.add_coords--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.add_coords--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.add_coords--notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.append" class="md-nav__link">
+    <span class="md-ellipsis">
+      append
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="append">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.append--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.append--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.convert" class="md-nav__link">
+    <span class="md-ellipsis">
+      convert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="convert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.convert--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.convert--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.convert--notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      delete
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="delete">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.delete--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.delete--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.freeze_atoms" class="md-nav__link">
+    <span class="md-ellipsis">
+      freeze_atoms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="freeze_atoms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.freeze_atoms--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.freeze_atoms--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.format" class="md-nav__link">
+    <span class="md-ellipsis">
+      format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.format--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.format--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.format--notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.get_centroid" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_centroid
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="get_centroid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.get_centroid--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.info" class="md-nav__link">
+    <span class="md-ellipsis">
+      info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.manipulate" class="md-nav__link">
+    <span class="md-ellipsis">
+      manipulate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="manipulate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.manipulate--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.manipulate--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.move" class="md-nav__link">
+    <span class="md-ellipsis">
+      move
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="move">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.move--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.move--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.printt" class="md-nav__link">
+    <span class="md-ellipsis">
+      printt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.rotate" class="md-nav__link">
+    <span class="md-ellipsis">
+      rotate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rotate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.rotate--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.rotate--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.save" class="md-nav__link">
+    <span class="md-ellipsis">
+      save
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="save">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.save--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.save--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.save--notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.sort--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.sort--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.ABCMolecule.sort--notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-private-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ABC Private Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ABC Private Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib._islatticematrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      _islatticematrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib._is3byxfloatmatrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      _is3byxfloatmatrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib._is6byxfloatselectivematrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      _is6byxfloatselectivematrix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abc-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ABC Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ABC Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.isvasplist" class="md-nav__link">
+    <span class="md-ellipsis">
+      isvasplist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.create_from_vasp_file_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_from_vasp_file_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.read_vasp" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_vasp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xyz-no-unitcell-molecule-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      XYZ (No Unitcell) Molecule Section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XYZ (No Unitcell) Molecule Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZCoord" class="md-nav__link">
+    <span class="md-ellipsis">
+      XYZCoord
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XYZCoord">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZCoord.line" class="md-nav__link">
+    <span class="md-ellipsis">
+      line
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule" class="md-nav__link">
+    <span class="md-ellipsis">
+      XYZMolecule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XYZMolecule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.add_coords" class="md-nav__link">
+    <span class="md-ellipsis">
+      add_coords
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="add_coords">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.add_coords--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.add_coords--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.add_coords--notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.append" class="md-nav__link">
+    <span class="md-ellipsis">
+      append
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="append">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.append--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.append--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.convert" class="md-nav__link">
+    <span class="md-ellipsis">
+      convert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="convert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.convert--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.convert--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      delete
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="delete">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.delete--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.delete--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.format" class="md-nav__link">
+    <span class="md-ellipsis">
+      format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.format--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.format--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.format--notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.get_centroid" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_centroid
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="get_centroid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.get_centroid--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.info" class="md-nav__link">
+    <span class="md-ellipsis">
+      info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.manipulate" class="md-nav__link">
+    <span class="md-ellipsis">
+      manipulate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="manipulate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.manipulate--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.manipulate--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.move" class="md-nav__link">
+    <span class="md-ellipsis">
+      move
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="move">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.move--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.move--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.printt" class="md-nav__link">
+    <span class="md-ellipsis">
+      printt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.rotate" class="md-nav__link">
+    <span class="md-ellipsis">
+      rotate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rotate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.rotate--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.rotate--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.save" class="md-nav__link">
+    <span class="md-ellipsis">
+      save
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="save">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.save--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.save--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.sort--parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.sort--returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.XYZMolecule.sort--notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xyz-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      XYZ Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XYZ Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.isturbomolelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      isturbomolelist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.create_from_turbomole_file_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_from_turbomole_file_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.read_turbomole" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_turbomole
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.isxyzlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      isxyzlist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.create_from_xyz_file_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_from_xyz_file_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.read_xyz" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_xyz
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-file-reading-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      More File Reading Formats
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="More File Reading Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib._is_xsf_coord_line" class="md-nav__link">
+    <span class="md-ellipsis">
+      _is_xsf_coord_line
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib._determine_rest_of_xsf_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      _determine_rest_of_xsf_file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.isxsflist" class="md-nav__link">
+    <span class="md-ellipsis">
+      isxsflist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.create_from_xsf_file_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_from_xsf_file_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.read_xsf" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_xsf
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.issiestalist" class="md-nav__link">
+    <span class="md-ellipsis">
+      issiestalist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.create_from_siesta_file_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_from_siesta_file_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#molecule_lib.read_siesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_siesta
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../todo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Todo Page
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="reference-documentation">Reference Documentation</h1>
+<h2 id="globals-docstrings">Globals Docstrings</h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="molecule_lib.GLOBALS_DOCSTRINGS" class="doc doc-heading">
+          <code>molecule_lib.GLOBALS_DOCSTRINGS</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+
+
+  <p>Attributes:</p>
+  <ul>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.ACCEPTED_ELEMENTS">ACCEPTED_ELEMENTS</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.Lx">Lx</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.Fx">Fx</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.La">La</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.Fa">Fa</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.Sa">Sa</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.Lc">Lc</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.Fc">Fc</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.UC_90_ANGLE_MAX">UC_90_ANGLE_MAX</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.UC_90_ANGLE_MIN">UC_90_ANGLE_MIN</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.MolIndex">MolIndex</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code><span title="molecule_lib.GLOBALS_DOCSTRINGS.MOLAR_MASS">MOLAR_MASS</span></code></b>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+  </ul>
+
+
+  </div>
+
+
+</div><h2 id="math-functions">Math functions</h2>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.csc" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">csc</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Return the cosecant of x (measured in radians).</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.sec" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">sec</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Return the secant of x (measured in radians).</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.cot" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">cot</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Return the cotangent of x (measured in radians).</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib._isfloatstr" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">_isfloatstr</span><span class="p">(</span><span class="n">item</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Return True if item is float string, False otherwise.</p>
+
+  </div>
+
+</div><h2 id="abc-unitcell-molecule-section">ABC (Unitcell) Molecule Section</h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="molecule_lib.ABCCoord" class="doc doc-heading">
+          <code>molecule_lib.ABCCoord</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+      <p>Dataclass for atomic coordinates for use in ABCMolecule class.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>sp</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p>Species of atom.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>a</code></b>
+            (<code>float</code>)
+        –
+        <div class="doc-md-description">
+          <p>a or x coordinate position of atom.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>b</code></b>
+            (<code>float</code>)
+        –
+        <div class="doc-md-description">
+          <p>b or y coordinate position of atom.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>c</code></b>
+            (<code>float</code>)
+        –
+        <div class="doc-md-description">
+          <p>c or z coordinate position of atom.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCCoord" href="#molecule_lib.ABCCoord">ABCCoord</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCCoord.line" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">line</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="molecule_lib.LatticeMatrix" class="doc doc-heading">
+          <code>molecule_lib.LatticeMatrix</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+      <p>Dataclass for ABCMolecule Class.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>constant</code></b>
+            (<code>float</code>)
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>vector_1</code></b>
+            (<code><span title="typing.Union">Union</span>[float, float, float]</code>)
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>vector_2</code></b>
+            (<code><span title="typing.Union">Union</span>[float, float, float]</code>)
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>vector_3</code></b>
+            (<code><span title="typing.Union">Union</span>[float, float, float]</code>)
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.LatticeMatrix" href="#molecule_lib.LatticeMatrix">LatticeMatrix</a></code>
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+      </div>
+      </li>
+  </ul>
+
+<details class="note" open>
+  <summary>Notes</summary>
+  <p>Other Attributes Generated:
+    a: float
+    b: float
+    c: float
+    alp: float
+    bet: float
+    gam: float
+    volume: float</p>
+</details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.LatticeMatrix.getabc" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getabc</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns sidelengths (a,b,c) of unitcell.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.LatticeMatrix.getanglesdeg" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getanglesdeg</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns (alpha, beta, gamma) of unitcell in degrees.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.LatticeMatrix.getanglesrad" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getanglesrad</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns (alpha, beta, gamma) of unitcell in radians.</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="molecule_lib.ABCMolecule" class="doc doc-heading">
+          <code>molecule_lib.ABCMolecule</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+      <p>Class for ABC molecule object.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>unitcell</code></b>
+            (<code><a class="autorefs autorefs-internal" title="molecule_lib.LatticeMatrix" href="#molecule_lib.LatticeMatrix">LatticeMatrix</a></code>)
+        –
+        <div class="doc-md-description">
+          <p>Instance of LatticeMatrix dataclass needed for ABCMolecule class.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>atoms</code></b>
+            (<code>list[<a class="autorefs autorefs-internal" title="molecule_lib.ABCCoord" href="#molecule_lib.ABCCoord">ABCCoord</a>]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>positional</code></b>
+            (<code>bool</code>, default:
+                <code>True</code>
+)
+        –
+        <div class="doc-md-description">
+          <p>If True, given ABCCoords are positional coordinates. If False, given ABCCoords are cartesian coordinates in Angstroms.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>comment_line</code></b>
+            (<code>str</code>, default:
+                <code>is &#34; &#34;</code>
+)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>filetype</code></b>
+            (<code>str</code>, default:
+                <code>&#39;unitcell&#39;</code>
+)
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="#molecule_lib.ABCMolecule">ABCMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.add_coords" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">add_coords</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">absorbent_reference</span><span class="p">,</span> <span class="n">surface_reference</span><span class="p">,</span> <span class="n">dist</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Add a new Molecule object to the current ABCMolecule object very precisely.</p>
+<h6 id="molecule_lib.ABCMolecule.add_coords--parameters">Parameters</h6>
+<p>molecule : ABCMolecule or XYZMolecule
+    <em>description</em>
+axis : "{0 or 'x', 1 or 'y', 2 or 'z'}"
+    Placement of new molecule will be in direction of axis.
+absorbent_reference : "{'Top' or 'Centroid' or 'Bottom' or 'Most postive Sp' or 'Most negative Sp' or CoordType}"
+    <em>description</em>
+surface_reference : "{'Top' or 'Centroid' or 'Bottom' or 'Most postive Sp' or 'Most negative Sp' or CoordType}"
+    <em>description</em>
+dist : float
+    sign of float determines what direction the new molecule is placed.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.ABCMolecule.add_coords--returns">Returns</h6>
+<p>ABCMolecule
+    ABCMolecule with new atoms added.</p>
+<h6 id="molecule_lib.ABCMolecule.add_coords--notes">Notes</h6>
+<p>Need to add CoordType logic.
+Need to add ABCMolecule logic.
+NEED TO ADD absorbent/surface reference can of type coord also probably need coord protocol
+NEED TO ADD LOGIC FOR CONVERTING TO DIFFERENT ATOM TYPES
+operation happens in cartesian coordinates and then the new coords are converted back to positional
+need to ensure operation only happens in a trigonal unit cell until i find the generic unitcell formula</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.append" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">append</span><span class="p">(</span><span class="n">new_coords</span><span class="p">,</span> <span class="n">positional</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>To add coords to the current self.atoms attribute.</p>
+<h6 id="molecule_lib.ABCMolecule.append--parameters">Parameters</h6>
+<p>new_coords : ABCCoord or list[ABCCoord]
+    List of new coords to add to new object.
+positional : bool
+    True if coords are positional coordinates. False if they are cartesian coordinates.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.ABCMolecule.append--returns">Returns</h6>
+<p>ABCMolecule
+    <em>description</em></p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.convert" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">convert</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;trig&#39;</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Converts ABCMolecule to XYZMolecule.</p>
+<h6 id="molecule_lib.ABCMolecule.convert--parameters">Parameters</h6>
+<p>method : str, "{'general' or 'trig' or 'linalg'}" default 'trig'
+    Which method you want to use for converting ABCMolecule positional coords to, cartesian coordinates.
+        'general' is the general formula.
+        'trig' looks most correct and is the default.
+        'linalg' is an unfinished method using linear algebra concepts.</p>
+<h6 id="molecule_lib.ABCMolecule.convert--returns">Returns</h6>
+<p>ABCMolecule
+    <em>description</em></p>
+<h6 id="molecule_lib.ABCMolecule.convert--notes">Notes</h6>
+<p>Maybe we can use Tristan's paid chatgpt for it to help me
+    figure out the different methods and what is going on exactly.
+Notes on different methods:
+'linalg' is jerry's method that is unfinished
+'general' is the wikipedia formula which is supposedly the general solution but something is wrong about it
+'trig' is default and is what I believe is the correct method. Lowkey got it from chatgpt but it is correct.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.delete" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">delete</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Delete INDEXED atoms in ABCMolecule.</p>
+<h6 id="molecule_lib.ABCMolecule.delete--parameters">Parameters</h6>
+<p>index : MolIndex
+    <em>description</em>
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.ABCMolecule.delete--returns">Returns</h6>
+<p>ABCMolecule
+    ABCMolecule with selected atoms deleted.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.freeze_atoms" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">freeze_atoms</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">freeze_indexed</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p><em>summary</em></p>
+<h6 id="molecule_lib.ABCMolecule.freeze_atoms--parameters">Parameters</h6>
+<p>index : MolIndex
+    <em>description</em>
+freeze_indexed : bool
+    <em>description</em>
+inplace : bool, optional
+    <em>description</em>, by default False</p>
+<h6 id="molecule_lib.ABCMolecule.freeze_atoms--returns">Returns</h6>
+<p>ABCMolecule
+    <em>description</em></p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.format" class="doc doc-heading">
+          <code class="highlight language-python"><span class="nb">format</span><span class="p">(</span><span class="n">endline</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns formatted text for textbox or filewrite.</p>
+<h6 id="molecule_lib.ABCMolecule.format--parameters">Parameters</h6>
+<p>endline : str, default " "
+    Endline string for each file line.</p>
+<h6 id="molecule_lib.ABCMolecule.format--returns">Returns</h6>
+<p>list[str]
+    list of strings for vasp format with endline str as last character in string.</p>
+<h6 id="molecule_lib.ABCMolecule.format--notes">Notes</h6>
+<p>Can replace text.append self.atoms with abcCoord.line()
+need to add selective logic and information</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.get_centroid" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">get_centroid</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns 3d centroid of ABCMolecule atoms.</p>
+<h6 id="molecule_lib.ABCMolecule.get_centroid--returns">Returns</h6>
+<p>tuple[float,float,float]
+    Tuple of (x_centroid,y_centroid,z_centroid) in units Angstroms.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.info" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">info</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Prints ABCMolecule current attribute information to terminal.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.manipulate" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">manipulate</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Rotate or move only INDEXED atoms in ABCMolecule.</p>
+<h6 id="molecule_lib.ABCMolecule.manipulate--parameters">Parameters</h6>
+<p>index : MolIndex
+    <em>description</em>
+func : "{'move' or 'rotate'}"
+    ABCMolecule method you want to execute on the indexed atoms.
+inplace : bool, default False
+    If True, perform operation in-place.
+<em>args,</em>*kwargs
+    Needed for the chosen function 'move' or 'rotate'.</p>
+<h6 id="molecule_lib.ABCMolecule.manipulate--returns">Returns</h6>
+<p>ABCMolecule or None
+    ABCMolecule with all atoms moved or None if inplace=True.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.move" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">move</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Move atoms in designated directions.</p>
+<h6 id="molecule_lib.ABCMolecule.move--parameters">Parameters</h6>
+<p>x : float, default 0.0
+    Move coord in x direction by float amount.
+y : float, default 0.0
+    Move coord in y direction by float amount.
+z : float, default 0.0
+    Move coord in z direction by float amount.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.ABCMolecule.move--returns">Returns</h6>
+<p>ABCMolecule or None
+    ABCMolecule with all atoms moved or None if inplace=True.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.printt" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">printt</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Prints save file text to terminal.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.rotate" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">rotate</span><span class="p">(</span><span class="n">axis</span><span class="p">,</span> <span class="n">angle</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;deg&#39;</span><span class="p">,</span> <span class="n">about_centroid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Rotate atoms about designated axis.</p>
+<h6 id="molecule_lib.ABCMolecule.rotate--parameters">Parameters</h6>
+<p>axis : "{0 or 'x', 1 or 'y', 2 or 'z'}"
+    Parallel axis of rotation.
+angle : float
+    Angle of rotation.
+unit : "deg" or "rad", default "deg"
+    Unit of angle argument.
+about_centroid : bool, default True
+    If True, rotation occurs about the centroid.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.ABCMolecule.rotate--returns">Returns</h6>
+<p>ABCMolecule or None
+    ABCMolecule with all atoms moved or None if inplace=True.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.save" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">save</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Save ABCMolecule instance to given filename in vasp format in current working directory.</p>
+<h6 id="molecule_lib.ABCMolecule.save--parameters">Parameters</h6>
+<p>filename : str
+    Name you want the saved file to be.</p>
+<h6 id="molecule_lib.ABCMolecule.save--returns">Returns</h6>
+<p>filename in current working directory.</p>
+<h6 id="molecule_lib.ABCMolecule.save--notes">Notes</h6>
+<p>Eventually add for other file types...</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.ABCMolecule.sort" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">sort</span><span class="p">(</span><span class="n">sort_method</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Sort the atoms by position, species, alphabetical or atomic number.</p>
+<h6 id="molecule_lib.ABCMolecule.sort--parameters">Parameters</h6>
+<p>sort_method : str | list[str] | list[list[str]]
+    Method given by which the atoms will be sorted.
+        - if sort_method is 'x' the atoms will be sorted by their x coordinate.
+        - if sort_method is 'y' the atoms will be sorted by their y coordinate.
+        - if sort_method is 'z' the atoms will be sorted by their z coordinate.
+        - if sort_method is 'alphabetical' the atoms will be sorted in alphabetical order by their species.
+        - if sort_method is 'periodical' the atoms will be sorted by their atomic number.
+    You can also supply a list of lists with position 0 being species and position 1 being 'x','y','z', or None.
+        This will sort the coordinates by species then by the method provided for each species,
+        you can also add a list of bool for ascending values that will correspond to each species chosen method.
+    You can also supply a list of species and it will be reordered to the given order.
+ascending : bool or list of bool, default True
+    Sort ascending vs. descending. Specify list for multiple sort orders (as described above). If this is a list of bools, must match the length of sort_method.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.ABCMolecule.sort--returns">Returns</h6>
+<p>ABCMolecule or None
+    ABCMolecule with all atoms moved or None if inplace=True.</p>
+<h6 id="molecule_lib.ABCMolecule.sort--notes">Notes</h6>
+<p>sort method +x,-x,+y,-y,+z,-z,species,sp list,alphabetical,periodical,</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div><h2 id="abc-private-functions">ABC Private Functions</h2>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib._islatticematrix" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">_islatticematrix</span><span class="p">(</span><span class="n">lattice_list</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Return True if lattice_list is .vasp file lattice matrix, False otherwise.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>lattice_list</code></b>
+            (<code>(list of filelines.split())</code>)
+        –
+        <div class="doc-md-description">
+          <p>Is a list of list of filelines
+where each string in the file line seperated by a space is its own
+element in the list. data_list[0] is the contains the first line
+information of the file and data_list[-1] contains the last line
+0 information of the file.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code>bool</code>
+        –
+        <div class="doc-md-description">
+          <p>True if lattice_list fufills .vasp file lattice matrix standards.</p>
+      </div>
+      </li>
+  </ul>
+
+<details class="note" open>
+  <summary>Notes</summary>
+  <p>.vasp file lattice matrix:
+    -lattice constant is a postive float number.
+    -lattice matrix is a 3x3 float matrix.</p>
+</details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib._is3byxfloatmatrix" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">_is3byxfloatmatrix</span><span class="p">(</span><span class="n">num_matrix</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Return True if num_matrix is a 3 by x float matrix, False otherwise.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib._is6byxfloatselectivematrix" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">_is6byxfloatselectivematrix</span><span class="p">(</span><span class="n">sel_matrix</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Return True if sel_matrix is a 6 by x with first 3 data info is float matrix and next 3 is either 'F' or 'T' string, False otherwise.</p>
+
+  </div>
+
+</div><h2 id="abc-functions">ABC Functions</h2>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.isvasplist" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">isvasplist</span><span class="p">(</span><span class="n">data_list</span><span class="p">,</span> <span class="n">extralines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Return True if data list fufills .vasp file standards, False otherwise.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>data_list</code></b>
+            (<code>(list of filelines.split())</code>)
+        –
+        <div class="doc-md-description">
+          <p>Is a list of list of filelines
+where each string in the file line seperated by a space is its own
+element in the list. data_list[0] is the contains the first line
+information of the file and data_list[-1] contains the last line
+0 information of the file.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>extralines</code></b>
+            (<code>bool</code>, default:
+                <code>False</code>
+)
+        –
+        <div class="doc-md-description">
+          <p>If True, if there are extra lines in the file, function returns False.
+It is quote 'strict' on extra lines if True.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code>bool</code>
+        –
+        <div class="doc-md-description">
+          <p>True if data_list fufills .vasp file standards.</p>
+      </div>
+      </li>
+  </ul>
+
+<details class="note" open>
+  <summary>Notes</summary>
+  <p>.vasp file standards:
+    -there is a positive float value for lattice constant
+    -there is a 3x3 float matrix for lattice matrix
+    -there is correct species line
+    -there is list of integers below species line
+    -there is Selective Dynamics with dynamics info after coord info
+    -there is Cartesian or Direct with correct coord matrix below</p>
+</details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.create_from_vasp_file_data" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">create_from_vasp_file_data</span><span class="p">(</span><span class="n">file_data</span><span class="p">,</span> <span class="n">extralines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>file_data</code></b>
+            (<code>list[list[str]]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>extralines</code></b>
+            (<code>bool</code>, default:
+                <code>False</code>
+)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em>, by default False</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="#molecule_lib.ABCMolecule">ABCMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.read_vasp" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">read_vasp</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">extralines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Reads .vasp or POSCAR file and returns ABCMolecule instance.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>filepath</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p>Filename (if in current working directory)
+or absolute path or os.path.join(os.getcwd(),'filename.xyz')</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>extralines</code></b>
+            (<code>bool</code>, default:
+                <code>False</code>
+)
+        –
+        <div class="doc-md-description">
+          <p>If True, if there are extra lines in the file, function will not return XYZMolecule instance.
+It is quote 'strict' on extra lines if True.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="#molecule_lib.ABCMolecule">ABCMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+<details class="note" open>
+  <summary>Notes</summary>
+  <p>Add selective logic, maybe add a bool to turn it on and off or add it if it doesn't have it.</p>
+</details>
+  </div>
+
+</div><h2 id="xyz-no-unitcell-molecule-section">XYZ (No Unitcell) Molecule Section</h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="molecule_lib.XYZCoord" class="doc doc-heading">
+          <code>molecule_lib.XYZCoord</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+      <p>Dataclass for atomic coordinates for use in XYZMolecule class.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>sp</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p>Species of atom.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>x</code></b>
+            (<code>float</code>)
+        –
+        <div class="doc-md-description">
+          <p>x coordinate position of atom.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>y</code></b>
+            (<code>float</code>)
+        –
+        <div class="doc-md-description">
+          <p>y coordinate position of atom.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>z</code></b>
+            (<code>float</code>)
+        –
+        <div class="doc-md-description">
+          <p>z coordinate position of atom.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.XYZCoord" href="#molecule_lib.XYZCoord">XYZCoord</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZCoord.line" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">line</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="molecule_lib.XYZMolecule" class="doc doc-heading">
+          <code>molecule_lib.XYZMolecule</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+      <p>Class for xyz molecule object.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>atoms</code></b>
+            (<code>list[<a class="autorefs autorefs-internal" title="molecule_lib.XYZCoord" href="#molecule_lib.XYZCoord">XYZCoord</a>]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>comment_line</code></b>
+            (<code>str</code>, default:
+                <code>is &#34; &#34;</code>
+)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>filetype</code></b>
+            (<code>str</code>, default:
+                <code>&#39;&#39;</code>
+)
+        –
+        <div class="doc-md-description">
+          <p><strong>description</strong></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.XYZMolecule" href="#molecule_lib.XYZMolecule">XYZMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.add_coords" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">add_coords</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">absorbent_reference</span><span class="p">,</span> <span class="n">surface_reference</span><span class="p">,</span> <span class="n">dist</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Add a new Molecule object to the current XYZMolecule object very precisely.</p>
+<h6 id="molecule_lib.XYZMolecule.add_coords--parameters">Parameters</h6>
+<p>molecule : XYZMolecule
+    <em>description</em>
+axis : "{0 or 'x', 1 or 'y', 2 or 'z'}"
+    Placement of new molecule will be in direction of axis.
+absorbent_reference : "{'Top' or 'Centroid' or 'Bottom' or 'Most postive Sp' or 'Most negative Sp' or CoordType}"
+    <em>description</em>
+surface_reference : "{'Top' or 'Centroid' or 'Bottom' or 'Most postive Sp' or 'Most negative Sp' or CoordType}"
+    <em>description</em>
+dist : float
+    sign of float determines what direction the new molecule is placed.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.XYZMolecule.add_coords--returns">Returns</h6>
+<p>XYZMolecule
+    XYZMolecule with new atoms added.</p>
+<h6 id="molecule_lib.XYZMolecule.add_coords--notes">Notes</h6>
+<p>Need to add CoordType logic.
+Need to add ABCMolecule logic.
+NEED TO ADD absorbent/surface reference can of type coord also probably need coord protocol</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.append" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">append</span><span class="p">(</span><span class="n">new_coords</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>To add coords to the current self.atoms attribute.</p>
+<h6 id="molecule_lib.XYZMolecule.append--parameters">Parameters</h6>
+<p>new_coords : XYZCoord or list[XYZCoord]
+    List of new coords to add to new object.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.XYZMolecule.append--returns">Returns</h6>
+<p>XYZMolecule
+    <em>description</em></p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.convert" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">convert</span><span class="p">(</span><span class="n">lattice_matrix</span><span class="p">,</span> <span class="n">positional</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Converts XYZMolecule instance to ABCMolecule.</p>
+<h6 id="molecule_lib.XYZMolecule.convert--parameters">Parameters</h6>
+<p>lattice_matrix : LatticeMatrix
+    Instance of LatticeMatrix dataclass needed for ABCMolecule class.
+positional : bool, default True
+    If True, XYZ cartesian coordinates will convert to positional coordinates. If False, ABCMolecule will contain cartesian coordinates.</p>
+<h6 id="molecule_lib.XYZMolecule.convert--returns">Returns</h6>
+<p>ABCMolecule
+    <em>description</em></p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.delete" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">delete</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Delete INDEXED atoms in XYZMolecule.</p>
+<h6 id="molecule_lib.XYZMolecule.delete--parameters">Parameters</h6>
+<p>index : MolIndex
+    <em>description</em>
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.XYZMolecule.delete--returns">Returns</h6>
+<p>XYZMolecule or None
+    XYZMolecule with selected atoms deleted or None if inplace=True.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.format" class="doc doc-heading">
+          <code class="highlight language-python"><span class="nb">format</span><span class="p">(</span><span class="n">endline</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">filetype</span><span class="o">=</span><span class="s1">&#39;.xyz&#39;</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns formatted text for textbox or filewrite.</p>
+<h6 id="molecule_lib.XYZMolecule.format--parameters">Parameters</h6>
+<p>endline : str, default " "
+    Endline string for each file line.</p>
+<h6 id="molecule_lib.XYZMolecule.format--returns">Returns</h6>
+<p>list[str]
+    list of strings for xyz format with endline str as last character in string.</p>
+<h6 id="molecule_lib.XYZMolecule.format--notes">Notes</h6>
+<p>Can replace text.append self.atoms with XYZCoord.line()</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.get_centroid" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">get_centroid</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns 3d centroid of XYZMolecule atoms.</p>
+<h6 id="molecule_lib.XYZMolecule.get_centroid--returns">Returns</h6>
+<p>tuple[float,float,float]
+    Tuple of (x_centroid,y_centroid,z_centroid) in units Angstroms.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.info" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">info</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Prints XYZMolecule current attribute information to terminal.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.manipulate" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">manipulate</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Rotate or move only INDEXED atoms in XYZMolecule.</p>
+<h6 id="molecule_lib.XYZMolecule.manipulate--parameters">Parameters</h6>
+<p>index : MolIndex
+    <em>description</em>
+func : "{'move' or 'rotate'}"
+    XYZMolecule method you want to execute on the indexed atoms.
+inplace : bool, default False
+    If True, perform operation in-place.
+<em>args,</em>*kwargs
+    Needed for the chosen function 'move' or 'rotate'.</p>
+<h6 id="molecule_lib.XYZMolecule.manipulate--returns">Returns</h6>
+<p>XYZMolecule or None
+    XYZMolecule with all atoms moved or None if inplace=True.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.move" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">move</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Move ALL atoms in designated directions.</p>
+<h6 id="molecule_lib.XYZMolecule.move--parameters">Parameters</h6>
+<p>x : float, default 0.0
+    Move coord in x direction by float amount.
+y : float, default 0.0
+    Move coord in y direction by float amount.
+z : float, default 0.0
+    Move coord in z direction by float amount.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.XYZMolecule.move--returns">Returns</h6>
+<p>XYZMolecule or None
+    XYZMolecule with all atoms moved or None if inplace=True.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.printt" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">printt</span><span class="p">()</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Prints save file text to terminal.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.rotate" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">rotate</span><span class="p">(</span><span class="n">axis</span><span class="p">,</span> <span class="n">angle</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;deg&#39;</span><span class="p">,</span> <span class="n">about_centroid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Rotate ALL atoms about designated axis.</p>
+<h6 id="molecule_lib.XYZMolecule.rotate--parameters">Parameters</h6>
+<p>axis : "{0 or 'x', 1 or 'y', 2 or 'z'}"
+    Parallel axis of rotation.
+angle : float
+    Angle of rotation.
+unit : "deg" or "rad", default "deg"
+    Unit of angle argument.
+about_centroid : bool, default True
+    If True, rotation occurs about the centroid.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.XYZMolecule.rotate--returns">Returns</h6>
+<p>XYZMolecule or None
+    XYZMolecule with all atoms moved or None if inplace=True.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.save" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">save</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">filetype</span><span class="o">=</span><span class="s1">&#39;.xyz&#39;</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Save XYZMolecule instance to given filename in current working directory.</p>
+<h6 id="molecule_lib.XYZMolecule.save--parameters">Parameters</h6>
+<p>filename : str
+    Name you want the saved file to be.</p>
+<h6 id="molecule_lib.XYZMolecule.save--returns">Returns</h6>
+<p>filename.xyz in current working directory.</p>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="molecule_lib.XYZMolecule.sort" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">sort</span><span class="p">(</span><span class="n">sort_method</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Sort the atoms in Molecule instance by position, species, alphabetical or atomic number.</p>
+<h6 id="molecule_lib.XYZMolecule.sort--parameters">Parameters</h6>
+<p>sort_method : str | list[str] | list[list[str]]
+    Method given by which the atoms will be sorted.
+        - if sort_method is 'x' the atoms will be sorted by their x coordinate.
+        - if sort_method is 'y' the atoms will be sorted by their y coordinate.
+        - if sort_method is 'z' the atoms will be sorted by their z coordinate.
+        - if sort_method is 'alphabetical' the atoms will be sorted in alphabetical order by their species.
+        - if sort_method is 'periodical' the atoms will be sorted by their atomic number.
+    You can also supply a list of lists with position 0 being species and position 1 being 'x','y','z', or None.
+        This will sort the coordinates by species then by the method provided for each species,
+        you can also add a list of bool for ascending values that will correspond to each species chosen method.
+    You can also supply a list of species and it will be reordered to the given order.
+ascending : bool or list of bool, default True
+    Sort ascending vs. descending. Specify list for multiple sort orders (as described above). If this is a list of bools, must match the length of sort_method.
+inplace : bool, default False
+    If True, perform operation in-place.</p>
+<h6 id="molecule_lib.XYZMolecule.sort--returns">Returns</h6>
+<p>XYZMolecule or None
+    XYZMolecule with all atoms moved or None if inplace=True.</p>
+<h6 id="molecule_lib.XYZMolecule.sort--notes">Notes</h6>
+<p>sort method +x,-x,+y,-y,+z,-z,species,sp list,alphabetical,periodical,</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div><h2 id="xyz-functions">XYZ Functions</h2>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.isturbomolelist" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">isturbomolelist</span><span class="p">(</span><span class="n">data_list</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>data_list</code></b>
+            (<code>list[list[str]]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>extralines</code></b>
+            (<code>bool</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em>, by default False</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code>bool</code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.create_from_turbomole_file_data" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">create_from_turbomole_file_data</span><span class="p">(</span><span class="n">file_data</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.read_turbomole" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">read_turbomole</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>filepath</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.XYZMolecule" href="#molecule_lib.XYZMolecule">XYZMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.isxyzlist" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">isxyzlist</span><span class="p">(</span><span class="n">data_list</span><span class="p">,</span> <span class="n">extralines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Return True if datalist fufills .xyz file standards, False otherwise.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>data_list</code></b>
+            (<code>(list of filelines.split())</code>)
+        –
+        <div class="doc-md-description">
+          <p>Is a list of list of filelines
+where each string in the file line seperated by a space is its own
+element in the list. data_list[0] is the contains the first line
+information of the file and data_list[-1] contains the last line
+0 information of the file.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>extralines</code></b>
+            (<code>bool</code>, default:
+                <code>False</code>
+)
+        –
+        <div class="doc-md-description">
+          <p>If True, if there are extra lines in the file, function returns False.
+It is quote 'strict' on extra lines if True.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code>bool</code>
+        –
+        <div class="doc-md-description">
+          <p>True if .xyz file standards are met.</p>
+      </div>
+      </li>
+  </ul>
+
+<details class="note" open>
+  <summary>Notes</summary>
+  <p>.xyz file standards:
+    - first line contains a integer (total amount of atoms in file).
+    - third line to last line of file contains only this information,
+        'Element   float(x coord)   float(y coord)   float(z coord)'.
+    - if total amount of atoms in the file matches the amount of data lines
+        found in the file.
+    - if there are no empty or blank lines at the end of the file.
+    - it is STRICT if extralines if True on the amount of empty line at the end of the file.</p>
+</details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.create_from_xyz_file_data" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">create_from_xyz_file_data</span><span class="p">(</span><span class="n">file_data</span><span class="p">,</span> <span class="n">extralines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.read_xyz" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">read_xyz</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">extralines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Reads .xyz file and returns XYZMolecule instance.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>filepath</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p>Filename (if in current working directory)
+or absolute path or os.path.join(os.getcwd(),'filename.xyz')</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>extralines</code></b>
+            (<code>bool</code>, default:
+                <code>False</code>
+)
+        –
+        <div class="doc-md-description">
+          <p>If True, if there are extra lines in the file, function will not return XYZMolecule instance.
+It is quote 'strict' on extra lines if True.</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.XYZMolecule" href="#molecule_lib.XYZMolecule">XYZMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div><h2 id="more-file-reading-formats">More File Reading Formats</h2>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib._is_xsf_coord_line" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">_is_xsf_coord_line</span><span class="p">(</span><span class="n">line</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>line</code></b>
+            (<code>list[str]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code>bool</code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib._determine_rest_of_xsf_file" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">_determine_rest_of_xsf_file</span><span class="p">(</span><span class="n">rest_of_file</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>rest_of_file</code></b>
+            (<code>list[list[str]]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code>tuple[bool, int]</code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.isxsflist" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">isxsflist</span><span class="p">(</span><span class="n">data_list</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>data_list</code></b>
+            (<code>list[list[str]]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code>bool</code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.create_from_xsf_file_data" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">create_from_xsf_file_data</span><span class="p">(</span><span class="n">file_data</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>file_data</code></b>
+            (<code>list[list[str]]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="#molecule_lib.ABCMolecule">ABCMolecule</a> | <a class="autorefs autorefs-internal" title="molecule_lib.XYZMolecule" href="#molecule_lib.XYZMolecule">XYZMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.read_xsf" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">read_xsf</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>filepath</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="#molecule_lib.ABCMolecule">ABCMolecule</a> | <a class="autorefs autorefs-internal" title="molecule_lib.XYZMolecule" href="#molecule_lib.XYZMolecule">XYZMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+<details class="note" open>
+  <summary>Notes</summary>
+  <p>Need to ensure keywords for xyzmolecule is only ATOMS
+and keyword for abcmolecule is "primvec" and "primcoord"</p>
+</details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.issiestalist" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">issiestalist</span><span class="p">(</span><span class="n">data_list</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>data_list</code></b>
+            (<code>list[list[str]]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code>bool</code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.create_from_siesta_file_data" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">create_from_siesta_file_data</span><span class="p">(</span><span class="n">file_data</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>file_data</code></b>
+            (<code>list[list[str]]</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="#molecule_lib.ABCMolecule">ABCMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="molecule_lib.read_siesta" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">read_siesta</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p><em>summary</em></p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>filepath</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="#molecule_lib.ABCMolecule">ABCMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p><em>description</em></p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 Jeremy Schroeder
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:jeremynschroeder@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.depts.ttu.edu/me/combustionlab/" target="_blank" rel="noopener" title="www.depts.ttu.edu" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M32 32C14.3 32 0 46.3 0 64s14.3 32 32 32h128v352c0 17.7 14.3 32 32 32s32-14.3 32-32V96h128c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigate.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
