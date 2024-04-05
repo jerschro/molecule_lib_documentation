@@ -6,6 +6,7 @@
 4. Change logic for read functions so no extralines argument. It will be flexible on extra lines at the end of the file.
 6. Add documentation for everything and maybe an examples page and an intro page
 7. Maybe change how add_coord function works.
+8. LAMMPS is not correct. Direct coords and unit cell need to be multiplied by xyz
 
 
 ## Notes from word document
