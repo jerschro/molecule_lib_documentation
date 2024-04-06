@@ -7,6 +7,7 @@
 6. Add documentation for everything and maybe an examples page and an intro page
 7. Maybe change how add_coord function works.
 8. LAMMPS is not correct. Direct coords and unit cell need to be multiplied by xyz
+9. Create Job class like what Tristan has. Give path to a directory and then like do function read xyz, I think just add to the vasp_energy or read_control script. Edit read_control script
 
 
 ## Notes from word document
