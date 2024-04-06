@@ -107,38 +107,6 @@
         - save
         - sort
   
-## ABC Private Functions
-
-::: molecule_lib._islatticematrix
-    handler: python
-    options:
-      docstring_style: numpy
-      show_root_heading: true
-      heading_level: 3
-      show_source: false
-      summary: true    
-      docstring_section_style: list
-
-::: molecule_lib._is3byxfloatmatrix
-    handler: python
-    options:
-      docstring_style: numpy
-      show_root_heading: true
-      heading_level: 3
-      show_source: false
-      summary: true    
-      docstring_section_style: list
-
-::: molecule_lib._is6byxfloatselectivematrix
-    handler: python
-    options:
-      docstring_style: numpy
-      show_root_heading: true
-      heading_level: 3
-      show_source: false
-      summary: true    
-      docstring_section_style: list
-
 ## ABC Functions
 
 ::: molecule_lib.isvasplist
