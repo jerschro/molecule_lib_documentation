@@ -3,6 +3,7 @@ site_name: molecule_lib Documentation
 nav:
   - Home : index.md
   - Read Functions : read_functions.md
+  - LAMMPS : lammps.md
   - API Reference : reference.md
   - Todo Page: todo.md
 
