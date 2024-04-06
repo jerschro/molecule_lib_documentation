@@ -8,7 +8,10 @@
 7. Maybe change how add_coord function works.
 8. LAMMPS is not correct. Direct coords and unit cell need to be multiplied by xyz
 9. Create Job class like what Tristan has. Give path to a directory and then like do function read xyz, I think just add to the vasp_energy or read_control script. Edit read_control script
-
+10. May need to change self.positional to self.direct. Need to look at definition to fully determine
+11. Need to add set to every single isinstance(obj, list) and isinstance(obj, tuple)
+12. Maybe rethink how files are saved and If I want to save a vasp file as .xyz, i need to convert it to XYZMolecule first.
+13. 
 
 ## Notes from word document
 Shift alt o for formatting import statements
