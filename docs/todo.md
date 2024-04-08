@@ -11,7 +11,7 @@
 10. May need to change self.positional to self.direct. Need to look at definition to fully determine
 11. Need to add set to every single isinstance(obj, list) and isinstance(obj, tuple)
 12. Maybe rethink how files are saved and If I want to save a vasp file as .xyz, i need to convert it to XYZMolecule first.
-13. 
+13. for read_lammps, add unit cell information in comment line like i did for generate_lammps function
 
 ## Notes from word document
 Shift alt o for formatting import statements
