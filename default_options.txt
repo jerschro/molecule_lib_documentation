@@ -1,0 +1,55 @@
+
+
+
+::: molecule_lib.ABCMolecule
+    handler: python
+    options:
+        find_stubs_package: false
+        docstring_style: google
+        docstring_options: {}
+        show_symbol_type_heading: false
+        show_symbol_type_toc: false
+        show_root_heading: false
+        show_root_toc_entry: true
+        show_root_full_path: true
+        show_root_members_full_path: false
+        show_object_full_path: false
+        show_category_heading: false
+        show_if_no_docstring: false
+        show_signature: true
+        show_signature_annotations: false
+        signature_crossrefs: false
+        separate_signature: false
+        line_length: 60
+        merge_init_into_class: false
+        show_docstring_attributes: true
+        show_docstring_functions: true
+        show_docstring_classes: true
+        show_docstring_modules: true
+        show_docstring_description: true
+        show_docstring_examples: true
+        show_docstring_other_parameters: true
+        show_docstring_parameters: true
+        show_docstring_raises: true
+        show_docstring_receives: true
+        show_docstring_returns: true
+        show_docstring_warns: true
+        show_docstring_yields: true
+        show_source: true
+        show_bases: true
+        show_inheritance_diagram: false
+        show_submodules: false
+        group_by_category: true
+        heading_level: 2
+        members_order: alphabetical
+        docstring_section_style: table
+        members: None
+        inherited_members: false
+        annotations_path: brief
+        preload_modules: None
+        allow_inspection: true
+        summary: false
+        show_labels: true
+        unwrap_annotated: false
+        parameter_headings: false
+        modernize_annotations: false
