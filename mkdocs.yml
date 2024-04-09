@@ -1,51 +1,86 @@
 site_name: molecule_lib Documentation
+site_url: https://jerschro.github.io/molecule_lib_documentation/
+site_author: Jeremy Schroeder
+site_description: Documentation of python library for manipulating molecular structures.
+repo_name: jerschro/molecule_lib_documentation
+repo_url: https://github.com/jerschro/molecule_lib_documentation
 
 nav:
   - Home : index.md
   - Read Functions : read_functions.md
   - LAMMPS : lammps.md
-  - API Reference : generated_api.md
+  - API Reference : reference.md
   - Todo Page: todo.md
-
 
 theme:
   name: material
   features:
-    - navigation.tabs
+    - announce.dismiss
+    # - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    # - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
     - navigation.sections
-    - navigation.instant
-    - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - toc.integrate
+    - navigation.sections
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
     - navigate.top
-    - search.suggest
     - search.highlight
-    - content.tabs.link
-    - content.code.annotation
-    - content.code.copy
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   language: en
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: teal
       accent: purple
-    - scheme: slate
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: teal
       accent: lime
-
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - search
   - mkdocstrings
 
-
-
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 extra:
   social:
@@ -53,6 +88,8 @@ extra:
       link: mailto:jeremynschroeder@gmail.com
     - icon: fontawesome/solid/t
       link: https://www.depts.ttu.edu/me/combustionlab/
+    - icon: fontawesome/brands/github
+      link: https://github.com/jerschro
 
 copyright: |
   &copy; 2024 Jeremy Schroeder
