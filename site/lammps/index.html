@@ -12,11 +12,11 @@
         <link rel="prev" href="../read_functions/">
       
       
-        <link rel="next" href="../reference/">
+        <link rel="next" href="../generated_api/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.10ba22f1.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -254,7 +254,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../reference/" class="md-tabs__link">
+      <a href="../generated_api/" class="md-tabs__link">
         
   
     
@@ -449,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/" class="md-nav__link">
+      <a href="../generated_api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -506,14 +506,14 @@
 
 
 <h2 id="molecule_lib.read_lammps" class="doc doc-heading">
-          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">read_lammps</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">mol_type</span><span class="p">)</span></code>
+          <code class="highlight language-python"><span class="n">molecule_lib</span><span class="o">.</span><span class="n">read_lammps</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">mol_type</span><span class="p">,</span> <span class="n">debug_print</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 </h2>
 
 
   <div class="doc doc-contents first">
   
-      <p>Read Lammps file and creates a Molecule object based on mol_type argument</p>
+      <p>Read Lammps file and creates a Molecule object based on mol_type argument.</p>
 
 
 
@@ -524,15 +524,16 @@
             (<code>str</code>)
         –
         <div class="doc-md-description">
-          <p>filepath of lammps file.</p>
+          <p>Filename (if in current working directory)
+or absolute path or os.path.join(os.getcwd(),'filename.xyz')</p>
         </div>
       </li>
       <li class="field-body">
         <b><code>mol_type</code></b>
-            (<code>str {&#39;XYZMolecule&#39;,&#39;ABCMolecule-direct&#39;,&#39;ABCMolecule-cartesian&#39;}</code>)
+            (<code>&#34;{&#39;XYZMolecule&#39; or &#39;ABCMolecule-direct&#39; or &#39;ABCMolecule-cartesian&#39;}&#34;</code>)
         –
         <div class="doc-md-description">
-          <p>What kinda of molecule object you want it to save as.</p>
+          <p>What kind of molecule object you want it to save as.</p>
         </div>
       </li>
   </ul>
@@ -542,10 +543,10 @@
   <p>Returns:</p>
   <ul>
       <li class="field-body">
-            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="../reference/#molecule_lib.ABCMolecule">ABCMolecule</a> | <a class="autorefs autorefs-internal" title="molecule_lib.XYZMolecule" href="../reference/#molecule_lib.XYZMolecule">XYZMolecule</a></code>
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="../generated_api/#molecule_lib.ABCMolecule">ABCMolecule</a> | <a class="autorefs autorefs-internal" title="molecule_lib.XYZMolecule" href="../generated_api/#molecule_lib.XYZMolecule">XYZMolecule</a></code>
         –
         <div class="doc-md-description">
-          <p>Returns ABCMolecule object if mol_type = 'ABCMolecule-direct' or 'ABCMolecule-cartesian' and XYZMoelcule object if mol_type = 'XYZMolecule'</p>
+          <p>ABCMolecule object if mol_type = 'ABCMolecule-direct' or 'ABCMolecule-cartesian' and XYZMoelcule object if mol_type = 'XYZMolecule'.</p>
       </div>
       </li>
   </ul>
@@ -567,7 +568,7 @@
 
   <div class="doc doc-contents first">
   
-      <p>Reads POSCAR file and generates a supercell for a lammps input file</p>
+      <p>Reads POSCAR file and generates a supercell for a lammps input file.</p>
 
 
 
@@ -578,36 +579,26 @@
             (<code>str</code>)
         –
         <div class="doc-md-description">
-          <p>Filepath of VASP POSCAR file you want to convert into a supercell and lammps input file.</p>
+          <p>Filename (if in current working directory)
+or absolute path or os.path.join(os.getcwd(),'filename.xyz')</p>
         </div>
       </li>
       <li class="field-body">
         <b><code>x</code></b>
-            (<code>int</code>)
+            (<code>int &gt;= 1</code>)
         –
         <div class="doc-md-description">
-          <p>Supercell factor in x direction</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><code>y</code></b>
-            (<code>int</code>)
-        –
-        <div class="doc-md-description">
-          <p>Supercell factor in y direction</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><code>z</code></b>
-            (<code>int</code>)
-        –
-        <div class="doc-md-description">
-          <p>Supercell factor in z direction</p>
+          <pre><code>Amount in the x direction the structure will be multiplied by.
+</code></pre>
+<p>y : int &gt;= 1
+    Amount in the y direction the structure will be multiplied by.
+z : int &gt;= 1
+    Amount in the z direction the structure will be multiplied by.</p>
         </div>
       </li>
       <li class="field-body">
         <b><code>mol_type</code></b>
-            (<code>str {&#39;XYZMolecule&#39;,&#39;ABCMolecule-direct&#39;,&#39;ABCMolecule-cartesian&#39;}</code>)
+            (<code>&#34;{&#39;XYZMolecule&#39; or &#39;ABCMolecule-direct&#39; or &#39;ABCMolecule-cartesian&#39;}&#34;</code>)
         –
         <div class="doc-md-description">
           <p>What kinda of molecule object you want it to save as.</p>
@@ -620,7 +611,7 @@
 )
         –
         <div class="doc-md-description">
-          <p>If you want to decompress the species line into 1</p>
+          <p>If you want to decompress the species line into smallest length possible.</p>
         </div>
       </li>
   </ul>
@@ -630,10 +621,10 @@
   <p>Returns:</p>
   <ul>
       <li class="field-body">
-            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="../reference/#molecule_lib.ABCMolecule">ABCMolecule</a> | <a class="autorefs autorefs-internal" title="molecule_lib.XYZMolecule" href="../reference/#molecule_lib.XYZMolecule">XYZMolecule</a></code>
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="../generated_api/#molecule_lib.ABCMolecule">ABCMolecule</a> | <a class="autorefs autorefs-internal" title="molecule_lib.XYZMolecule" href="../generated_api/#molecule_lib.XYZMolecule">XYZMolecule</a></code>
         –
         <div class="doc-md-description">
-          <p>Returns ABCMolecule object if mol_type = 'ABCMolecule-direct' or 'ABCMolecule-cartesian' and XYZMoelcule object if mol_type = 'XYZMolecule'</p>
+          <p>ABCMolecule object if mol_type = 'ABCMolecule-direct' or 'ABCMolecule-cartesian' and XYZMoelcule object if mol_type = 'XYZMolecule'.</p>
       </div>
       </li>
   </ul>
@@ -719,7 +710,7 @@
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigate.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
   </body>
