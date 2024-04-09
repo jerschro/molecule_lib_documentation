@@ -6,7 +6,12 @@ nav:
   - LAMMPS : lammps.md
   - API Reference : reference.md
   - Todo Page: todo.md
-
+  - All : all.md
+  - Default : default.md
+  - Default2 : default2.md
+  - Code Reference:
+    - project:
+      - init: reference/__init__.md
 theme:
   name: material
   features:
