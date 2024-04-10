@@ -12,6 +12,8 @@
 11. Need to add set to every single isinstance(obj, list) and isinstance(obj, tuple)
 12. Maybe rethink how files are saved and If I want to save a vasp file as .xyz, i need to convert it to XYZMolecule first.
 13. for read_lammps, add unit cell information in comment line like i did for generate_lammps function
+14. add tuple logic for printt so if theres a tuple it prints that index of the file.
+15. go through functions and create unit tests for each one aka ensure they work. 
 
 ## Notes from word document
 Shift alt o for formatting import statements
