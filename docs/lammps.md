@@ -2943,6 +2943,55 @@ Cartesian
 
 </details>
 
+## Trick with Formatting
+
+If you want to reorder the species of a file and group them together, look at this example.
+
+``` py title="compress_species_line.py"
+from molecule_lib import *
+
+lammps_data = read_lammps("data.tatb", "ABCMolecule-cartesian")   # reading lammps data file from lammps/examples/reaxff
+print("lammps_data top of POSCAR file")
+lammps_data.printt(10)                                            # looking at top of POSCAR file
+
+lammps_compressed = lammps_data.sort(["C","H","N","O"])           # resorting atom object into order by each species
+print("lammps_data compressed species line top of POSCAR format")
+lammps_compressed.printt(10)                                      # looking at top of POSCAR file
+
+
+```
+
+
+<details>
+<summary>Terminal Output from compress_species_line.py</summary>
+
+```
+lammps_data top of POSCAR file
+from lammps input deck
+       1.000000
+      13.624000       0.000000       0.000000
+       0.000000      17.114915       0.000000
+       0.000000       0.000000      15.182639
+C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O
+6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6
+Cartesian
+      -1.548610      11.250310       5.492990
+      -1.077640      10.658600       4.237360
+lammps_data compressed species line top of POSCAR format
+from lammps input deck
+       1.000000
+      13.624000       0.000000       0.000000
+       0.000000      17.114915       0.000000
+       0.000000       0.000000      15.182639
+C     H     N     O
+96    96    96    96
+Cartesian
+      -1.548610      11.250310       5.492990
+      -1.077640      10.658600       4.237360
+
+```
+</details>
+
 
 
 ## LAMMPS Functions

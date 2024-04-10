@@ -465,6 +465,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#trick-with-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trick with Formatting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lammps-functions" class="md-nav__link">
     <span class="md-ellipsis">
       LAMMPS Functions
@@ -573,6 +582,15 @@
   <a href="#example-usage" class="md-nav__link">
     <span class="md-ellipsis">
       Example Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trick-with-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trick with Formatting
     </span>
   </a>
   
@@ -3557,6 +3575,46 @@
 </span><span id="__span-3-1412"><a id="__codelineno-3-1412" name="__codelineno-3-1412" href="#__codelineno-3-1412"></a>      23.492110      17.792430      23.492110
 </span></code></pre></div>
 
+</details>
+
+<h2 id="trick-with-formatting">Trick with Formatting</h2>
+<p>If you want to reorder the species of a file and group them together, look at this example.</p>
+<div class="language-py highlight"><span class="filename">compress_species_line.py</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">molecule_lib</span> <span class="kn">import</span> <span class="o">*</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">lammps_data</span> <span class="o">=</span> <span class="n">read_lammps</span><span class="p">(</span><span class="s2">&quot;data.tatb&quot;</span><span class="p">,</span> <span class="s2">&quot;ABCMolecule-cartesian&quot;</span><span class="p">)</span>   <span class="c1"># reading lammps data file from lammps/examples/reaxff</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lammps_data top of POSCAR file&quot;</span><span class="p">)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">lammps_data</span><span class="o">.</span><span class="n">printt</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>                                            <span class="c1"># looking at top of POSCAR file</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">lammps_compressed</span> <span class="o">=</span> <span class="n">lammps_data</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s2">&quot;C&quot;</span><span class="p">,</span><span class="s2">&quot;H&quot;</span><span class="p">,</span><span class="s2">&quot;N&quot;</span><span class="p">,</span><span class="s2">&quot;O&quot;</span><span class="p">])</span>           <span class="c1"># resorting atom object into order by each species</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lammps_data compressed species line top of POSCAR format&quot;</span><span class="p">)</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">lammps_compressed</span><span class="o">.</span><span class="n">printt</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>                                      <span class="c1"># looking at top of POSCAR file</span>
+</span></code></pre></div>
+<details>
+<summary>Terminal Output from compress_species_line.py</summary>
+
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>lammps_data top of POSCAR file
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>from lammps input deck
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>       1.000000
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>      13.624000       0.000000       0.000000
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>       0.000000      17.114915       0.000000
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>       0.000000       0.000000      15.182639
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O    C    H    N    O
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>Cartesian
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>      -1.548610      11.250310       5.492990
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>      -1.077640      10.658600       4.237360
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>lammps_data compressed species line top of POSCAR format
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>from lammps input deck
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>       1.000000
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>      13.624000       0.000000       0.000000
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>       0.000000      17.114915       0.000000
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>       0.000000       0.000000      15.182639
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>C     H     N     O
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>96    96    96    96
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>Cartesian
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>      -1.548610      11.250310       5.492990
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>      -1.077640      10.658600       4.237360
+</span></code></pre></div>
 </details>
 
 <h2 id="lammps-functions">LAMMPS Functions</h2>
