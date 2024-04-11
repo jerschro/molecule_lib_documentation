@@ -15,6 +15,7 @@
 14. add tuple logic for printt so if theres a tuple it prints that index of the file.
 15. go through functions and create unit tests for each one aka ensure they work. 
 16. Rethink what indexing returns. maybe add get coord function to get the coord of one function instead of doing mol.atoms[0]
+17. Add a function to generate a unitcell box from an XYZMolecule. Probably should make it a method.
 
 
 
