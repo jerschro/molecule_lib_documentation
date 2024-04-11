@@ -11,7 +11,7 @@ nav:
   - LAMMPS : lammps.md
   - API Reference : reference.md
   - Todo Page: todo.md
-
+  - Report Bugs : submit_bug.md
 theme:
   name: material
   features:
