@@ -10,8 +10,8 @@ nav:
   - Read Functions : read_functions.md
   - LAMMPS : lammps.md
   - API Reference : reference.md
-  - Todo Page: todo.md
-  - Report Bugs : submit_bug.md
+  # - Todo Page: todo.md
+  # - Report Bugs : submit_bug.md
 theme:
   name: material
   features:
