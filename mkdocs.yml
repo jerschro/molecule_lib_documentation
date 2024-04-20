@@ -31,6 +31,8 @@ nav:
       - ABCMolecule.delete : reference/ABCMolecule/delete.md
       - ABCMolecule.freeze_atoms : reference/ABCMolecule/freeze_atoms.md
       - ABCMolecule.generate_supercell : reference/ABCMolecule/generate_supercell.md
+      - ABCMolecule.get : reference/ABCMolecule/get.md
+      - ABCMolecule.get_atoms : reference/ABCMolecule/get_atoms.md
       - ABCMolecule.get_centroid : reference/ABCMolecule/get_centroid.md
       - ABCMolecule.head : reference/ABCMolecule/head.md
       - ABCMolecule.info : reference/ABCMolecule/info.md
@@ -56,6 +58,8 @@ nav:
       - XYZMolecule.convert : reference/XYZMolecule/convert.md
       - XYZMolecule.delete : reference/XYZMolecule/delete.md
       - XYZMolecule.generate_supercell : reference/XYZMolecule/generate_supercell.md
+      - XYZMolecule.get : reference/XYZMolecule/get.md
+      - XYZMolecule.get_atoms : reference/XYZMolecule/get_atoms.md
       - XYZMolecule.get_centroid : reference/XYZMolecule/get_centroid.md
       - XYZMolecule.head : reference/XYZMolecule/head.md
       - XYZMolecule.info : reference/XYZMolecule/info.md
@@ -78,8 +82,6 @@ nav:
       - read_vasp : reference/Functions/read_vasp.md
       - read_xsf : reference/Functions/read_xsf.md
       - read_xyz : reference/Functions/read_xyz.md
-
-
 
 theme:
   name: material
