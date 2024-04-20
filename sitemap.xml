@@ -56,11 +56,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/format/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/freeze_atoms/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
@@ -72,6 +67,11 @@
     </url>
     <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/get_centroid/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/head/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -91,7 +91,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/printt/</loc>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/print/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -101,12 +101,42 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/save/</loc>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/sort/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/sort/</loc>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/switch_to_cartesian/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/switch_to_direct/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/tail/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/to_lammps/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/to_turbomole/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/to_vasp/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/to_xyz/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -116,107 +146,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/_determine_rest_of_xsf_file/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/_is_ae/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/_is_xsf_coord_line/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/_isfloatstr/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/_regex_nested_string_list/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/_regex_string_list/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/cot/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/create_from_lammps_file_data/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/create_from_siesta_file_data/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/create_from_turbomole_file_data/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/create_from_vasp_file_data/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/create_from_xsf_file_data/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/create_from_xyz_file_data/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/csc/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/generate_lammps/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/islammpslist/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/issiestalist/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/isturbomolelist/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/isvasplist/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/isxsflist/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/isxyzlist/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -251,11 +181,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/sec/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/LatticeMatrix/LatticeMatrix/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
@@ -272,6 +197,11 @@
     </url>
     <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/LatticeMatrix/getanglesrad/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/LatticeMatrix/getcommentline/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -311,17 +241,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/format/</loc>
-         <lastmod>2024-04-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/generate_supercell/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/get_centroid/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/head/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -341,7 +271,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/printt/</loc>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/print/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -351,12 +281,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/save/</loc>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/sort/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/sort/</loc>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/tail/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/to_lammps/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/to_turbomole/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/to_vasp/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/to_xyz/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
