@@ -13,7 +13,7 @@ nav:
   # - Todo Page: todo.md
   # - Report Bugs : submit_bug.md
   - Reference:
-    - Home : reference/index.md
+    - Reference : reference/index.md
     - ABCCoord :
       - ABCCoord : reference/ABCCoord/ABCCoord.md
       - ABCCoord.line : reference/ABCCoord/line.md
@@ -22,23 +22,30 @@ nav:
       - LatticeMatrix.getabc : reference/LatticeMatrix/getabc.md
       - LatticeMatrix.getanglesdeg : reference/LatticeMatrix/getanglesdeg.md
       - LatticeMatrix.getanglesrad : reference/LatticeMatrix/getanglesrad.md
+      - LatticeMatrix.getcommentline : reference/LatticeMatrix/getcommentline.md
     - ABCMolecule :
       - ABCMolecule : reference/ABCMolecule/ABCMolecule.md
       - ABCMolecule.add_coords : reference/ABCMolecule/add_coords.md
       - ABCMolecule.append : reference/ABCMolecule/append.md
       - ABCMolecule.convert : reference/ABCMolecule/convert.md
       - ABCMolecule.delete : reference/ABCMolecule/delete.md
-      - ABCMolecule.format : reference/ABCMolecule/format.md
       - ABCMolecule.freeze_atoms : reference/ABCMolecule/freeze_atoms.md
       - ABCMolecule.generate_supercell : reference/ABCMolecule/generate_supercell.md
       - ABCMolecule.get_centroid : reference/ABCMolecule/get_centroid.md
+      - ABCMolecule.head : reference/ABCMolecule/head.md
       - ABCMolecule.info : reference/ABCMolecule/info.md
       - ABCMolecule.manipulate : reference/ABCMolecule/manipulate.md
       - ABCMolecule.move : reference/ABCMolecule/move.md
-      - ABCMolecule.printt : reference/ABCMolecule/printt.md
+      - ABCMolecule.print : reference/ABCMolecule/print.md
       - ABCMolecule.rotate : reference/ABCMolecule/rotate.md
-      - ABCMolecule.save : reference/ABCMolecule/save.md
       - ABCMolecule.sort : reference/ABCMolecule/sort.md
+      - ABCMolecule.switch_to_cartesian : reference/ABCMolecule/switch_to_cartesian.md
+      - ABCMolecule.switch_to_direct : reference/ABCMolecule/switch_to_direct.md
+      - ABCMolecule.tail : reference/ABCMolecule/tail.md
+      - ABCMolecule.to_lammps : reference/ABCMolecule/to_lammps.md
+      - ABCMolecule.to_turbomole : reference/ABCMolecule/to_turbomole.md
+      - ABCMolecule.to_vasp : reference/ABCMolecule/to_vasp.md
+      - ABCMolecule.to_xyz : reference/ABCMolecule/to_xyz.md
     - XYZCoord :
       - XYZCoord : reference/XYZCoord/XYZCoord.md
       - XYZCoord.line : reference/XYZCoord/line.md
@@ -48,46 +55,29 @@ nav:
       - XYZMolecule.append : reference/XYZMolecule/append.md
       - XYZMolecule.convert : reference/XYZMolecule/convert.md
       - XYZMolecule.delete : reference/XYZMolecule/delete.md
-      - XYZMolecule.format : reference/XYZMolecule/format.md
       - XYZMolecule.generate_supercell : reference/XYZMolecule/generate_supercell.md
       - XYZMolecule.get_centroid : reference/XYZMolecule/get_centroid.md
+      - XYZMolecule.head : reference/XYZMolecule/head.md
       - XYZMolecule.info : reference/XYZMolecule/info.md
       - XYZMolecule.manipulate : reference/XYZMolecule/manipulate.md
       - XYZMolecule.move : reference/XYZMolecule/move.md
-      - XYZMolecule.printt : reference/XYZMolecule/printt.md
+      - XYZMolecule.print : reference/XYZMolecule/print.md
       - XYZMolecule.rotate : reference/XYZMolecule/rotate.md
-      - XYZMolecule.save : reference/XYZMolecule/save.md
       - XYZMolecule.sort : reference/XYZMolecule/sort.md
+      - XYZMolecule.tail : reference/XYZMolecule/tail.md
+      - XYZMolecule.to_lammps : reference/XYZMolecule/to_lammps.md
+      - XYZMolecule.to_turbomole : reference/XYZMolecule/to_turbomole.md
+      - XYZMolecule.to_vasp : reference/XYZMolecule/to_vasp.md
+      - XYZMolecule.to_xyz : reference/XYZMolecule/to_xyz.md
     - Functions :
       - Functions : reference/Functions/index.md
-      - _determine_rest_of_xsf_file : reference/Functions/_determine_rest_of_xsf_file.md
-      - _is_ae : reference/Functions/_is_ae.md
-      - _is_xsf_coord_line : reference/Functions/_is_xsf_coord_line.md
-      - _isfloatstr : reference/Functions/_isfloatstr.md
-      - _regex_nested_string_list : reference/Functions/_regex_nested_string_list.md
-      - _regex_string_list : reference/Functions/_regex_string_list.md
-      - cot : reference/Functions/cot.md
-      - create_from_lammps_file_data : reference/Functions/create_from_lammps_file_data.md
-      - create_from_siesta_file_data : reference/Functions/create_from_siesta_file_data.md
-      - create_from_turbomole_file_data : reference/Functions/create_from_turbomole_file_data.md
-      - create_from_vasp_file_data : reference/Functions/create_from_vasp_file_data.md
-      - create_from_xsf_file_data : reference/Functions/create_from_xsf_file_data.md
-      - create_from_xyz_file_data : reference/Functions/create_from_xyz_file_data.md
-      - csc : reference/Functions/csc.md
       - generate_lammps : reference/Functions/generate_lammps.md
-      - islammpslist : reference/Functions/islammpslist.md
-      - issiestalist : reference/Functions/issiestalist.md
-      - isturbomolelist : reference/Functions/isturbomolelist.md
-      - isvasplist : reference/Functions/isvasplist.md
-      - isxsflist : reference/Functions/isxsflist.md
-      - isxyzlist : reference/Functions/isxyzlist.md
       - read_lammps : reference/Functions/read_lammps.md
       - read_siesta : reference/Functions/read_siesta.md
       - read_turbomole : reference/Functions/read_turbomole.md
       - read_vasp : reference/Functions/read_vasp.md
       - read_xsf : reference/Functions/read_xsf.md
       - read_xyz : reference/Functions/read_xyz.md
-      - sec : reference/Functions/sec.md
 
 
 
