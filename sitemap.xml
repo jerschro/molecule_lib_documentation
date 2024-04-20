@@ -66,6 +66,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/get/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/get_atoms/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/get_centroid/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
@@ -242,6 +252,16 @@
     </url>
     <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/generate_supercell/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/get/</loc>
+         <lastmod>2024-04-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZMolecule/get_atoms/</loc>
          <lastmod>2024-04-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
