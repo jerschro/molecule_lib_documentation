@@ -21,6 +21,56 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/ABCAnimation/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/convert/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/get/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/get_range/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/head/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/info/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/print/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/tail/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/to_xdatcar/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCAnimation/to_xyz_animation/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/ABCCoord/ABCCoord/</loc>
          <lastmod>2024-04-21</lastmod>
          <changefreq>daily</changefreq>
@@ -161,11 +211,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/read_animation_xyz/</loc>
-         <lastmod>2024-04-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/read_lammps/</loc>
          <lastmod>2024-04-21</lastmod>
          <changefreq>daily</changefreq>
@@ -186,12 +231,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/read_xdatcar/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/read_xsf/</loc>
          <lastmod>2024-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/read_xyz/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/Functions/read_xyz_animation/</loc>
          <lastmod>2024-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
