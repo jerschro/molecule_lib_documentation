@@ -281,6 +281,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZAnimation/convert/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZAnimation/get/</loc>
          <lastmod>2024-04-21</lastmod>
          <changefreq>daily</changefreq>
@@ -307,6 +312,11 @@
     </url>
     <url>
          <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZAnimation/tail/</loc>
+         <lastmod>2024-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/XYZAnimation/to_xdatcar/</loc>
          <lastmod>2024-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
