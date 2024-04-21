@@ -73,15 +73,26 @@ nav:
       - XYZMolecule.to_turbomole : reference/XYZMolecule/to_turbomole.md
       - XYZMolecule.to_vasp : reference/XYZMolecule/to_vasp.md
       - XYZMolecule.to_xyz : reference/XYZMolecule/to_xyz.md
+    - XYZAnimation :
+      - XYZAnimation : reference/XYZAnimation/XYZAnimation.md
+      - XYZAnimation.get : reference/XYZAnimation/get.md
+      - XYZAnimation.get_range : reference/XYZAnimation/get_range.md
+      - XYZAnimation.head : reference/XYZAnimation/head.md
+      - XYZAnimation.info : reference/XYZAnimation/info.md
+      - XYZAnimation.print : reference/XYZAnimation/print.md
+      - XYZAnimation.tail : reference/XYZAnimation/tail.md
+      - XYZAnimation.to_xyz_animation : reference/XYZAnimation/to_xyz_animation.md
     - Functions :
       - Functions : reference/Functions/index.md
       - generate_lammps : reference/Functions/generate_lammps.md
+      - read_animation_xyz : reference/Functions/read_animation_xyz.md
       - read_lammps : reference/Functions/read_lammps.md
       - read_siesta : reference/Functions/read_siesta.md
       - read_turbomole : reference/Functions/read_turbomole.md
       - read_vasp : reference/Functions/read_vasp.md
       - read_xsf : reference/Functions/read_xsf.md
       - read_xyz : reference/Functions/read_xyz.md
+
 
 theme:
   name: material
