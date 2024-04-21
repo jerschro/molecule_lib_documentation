@@ -1,9 +1,10 @@
 # Functions
 * [generate_lammps](generate_lammps.md)
-* [read_animation_xyz](read_animation_xyz.md)
 * [read_lammps](read_lammps.md)
 * [read_siesta](read_siesta.md)
 * [read_turbomole](read_turbomole.md)
 * [read_vasp](read_vasp.md)
+* [read_xdatcar](read_xdatcar.md)
 * [read_xsf](read_xsf.md)
 * [read_xyz](read_xyz.md)
+* [read_xyz_animation](read_xyz_animation.md)

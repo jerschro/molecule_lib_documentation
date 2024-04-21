@@ -1,4 +1,4 @@
-::: molecule_lib.read_animation_xyz
+::: molecule_lib.ABCAnimation.head
     handler: python
     options:
         docstring_style: numpy
@@ -10,7 +10,7 @@
         show_docstring_attributes: true
         summary: true
         merge_init_into_class: false
-        heading_level: 2
+        heading_level: 3
         docstring_section_style: list
         show_labels: false
 
