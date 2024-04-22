@@ -491,6 +491,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#molecule_lib.read_xdatcar" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_xdatcar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#molecule_lib.read_xyz_animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_xyz_animation
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2280,6 +2298,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../reference/XYZAnimation/convert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XYZAnimation.convert
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../reference/XYZAnimation/get/" class="md-nav__link">
         
   
@@ -2390,6 +2429,27 @@
   
   <span class="md-ellipsis">
     XYZAnimation.tail
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/XYZAnimation/to_xdatcar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XYZAnimation.to_xdatcar
   </span>
   
 
@@ -2789,6 +2849,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#molecule_lib.read_xdatcar" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_xdatcar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#molecule_lib.read_xyz_animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_xyz_animation
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2823,7 +2901,7 @@
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;read_xyz() XYZMolecule Info:&quot;</span><span class="p">)</span>
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">xyz_file</span><span class="o">.</span><span class="n">info</span><span class="p">()</span> <span class="c1"># prints out information of Molecule object</span>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">xyz_file</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;a-001.xyz&quot;</span><span class="p">)</span> <span class="c1"># saving converted object to xyz file</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">xyz_file</span><span class="o">.</span><span class="n">to_xyz</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;a-001.xyz&quot;</span><span class="p">)</span> <span class="c1"># saving converted object to xyz file</span>
 </span></code></pre></div>
 <details>
 <summary>Terminal Output from read_functions_example.py</summary>
@@ -3349,6 +3427,100 @@ or absolute path or os.path.join(os.getcwd(),'filename.xyz')</p>
         –
         <div class="doc-md-description">
           <p>ABCMolecule object if mol_type = 'ABCMolecule-direct' or 'ABCMolecule-cartesian' and XYZMoelcule object if mol_type = 'XYZMolecule'.</p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="molecule_lib.read_xdatcar" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">read_xdatcar</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">debug_print</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Reads .xdatcar file and returns ABCAnimation instance.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>filepath</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p>Filename (if in current working directory)
+or absolute path or os.path.join(os.getcwd(),'filename.xyz').</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCAnimation" href="../reference/ABCAnimation/ABCAnimation/#molecule_lib.ABCAnimation">ABCAnimation</a></code>
+        –
+        <div class="doc-md-description">
+          <p>ABCAnimation object containing structure data from .xdatcar file.</p>
+      </div>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="molecule_lib.read_xyz_animation" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">read_xyz_animation</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">debug_print</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Reads .xyz animation file and returns XYZAnimation instance.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>filepath</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p>Filename (if in current working directory)
+or absolute path or os.path.join(os.getcwd(),'filename.xyz').</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.XYZAnimation" href="../reference/XYZAnimation/XYZAnimation/#molecule_lib.XYZAnimation">XYZAnimation</a></code>
+        –
+        <div class="doc-md-description">
+          <p>XYZAnimation object containing structure data from .xyz animation file.</p>
       </div>
       </li>
   </ul>

@@ -2259,6 +2259,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../reference/XYZAnimation/convert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XYZAnimation.convert
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../reference/XYZAnimation/get/" class="md-nav__link">
         
   
@@ -2369,6 +2390,27 @@
   
   <span class="md-ellipsis">
     XYZAnimation.tail
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/XYZAnimation/to_xdatcar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XYZAnimation.to_xdatcar
   </span>
   
 
@@ -2778,10 +2820,9 @@
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                                   <span class="n">compress_species_line</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>             <span class="c1"># Group Atoms by species in atom order</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">Zn8Cu5_supercell</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;lammps.data&quot;</span><span class="p">,</span> <span class="c1"># filename of lammps input file</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                      <span class="n">filetype</span><span class="o">=</span><span class="s2">&quot;.lammps&quot;</span><span class="p">)</span>     <span class="c1"># filetype is .lammps in order to save in lammps input format</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">Zn8Cu5_supercell</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;lammps.vasp&quot;</span><span class="p">)</span> <span class="c1"># saving supercell as a vasp file   </span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">Zn8Cu5_supercell</span><span class="o">.</span><span class="n">to_lammps</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;lammps.data&quot;</span><span class="p">)</span>     <span class="c1"># filetype is .lammps in order to save in lammps input format</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">Zn8Cu5_supercell</span><span class="o">.</span><span class="n">to_vasp</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;lammps.vasp&quot;</span><span class="p">)</span>       <span class="c1"># saving supercell as a vasp file   </span>
 </span></code></pre></div>
 <details>
 <summary>Initial Zn8Cu5 Bulk Structure</summary>
@@ -2847,6 +2888,7 @@
 </span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>     0.500000000         0.500000000         0.855735123
 </span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>     0.500000000         0.500000000         0.144264907
 </span></code></pre></div>
+
 </details>
 
 <details>
@@ -5701,11 +5743,11 @@
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">lammps_data</span> <span class="o">=</span> <span class="n">read_lammps</span><span class="p">(</span><span class="s2">&quot;data.tatb&quot;</span><span class="p">,</span> <span class="s2">&quot;ABCMolecule-cartesian&quot;</span><span class="p">)</span>   <span class="c1"># reading lammps data file from lammps/examples/reaxff</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lammps_data top of POSCAR file&quot;</span><span class="p">)</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">lammps_data</span><span class="o">.</span><span class="n">printt</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>                                            <span class="c1"># looking at top of POSCAR file</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">lammps_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>                                                <span class="c1"># looking at top of POSCAR file</span>
 </span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">lammps_compressed</span> <span class="o">=</span> <span class="n">lammps_data</span><span class="o">.</span><span class="n">sort</span><span class="p">([</span><span class="s2">&quot;C&quot;</span><span class="p">,</span><span class="s2">&quot;H&quot;</span><span class="p">,</span><span class="s2">&quot;N&quot;</span><span class="p">,</span><span class="s2">&quot;O&quot;</span><span class="p">])</span>           <span class="c1"># resorting atom object into order by each species</span>
 </span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lammps_data compressed species line top of POSCAR format&quot;</span><span class="p">)</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">lammps_compressed</span><span class="o">.</span><span class="n">printt</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>                                      <span class="c1"># looking at top of POSCAR file</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">lammps_compressed</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>                                          <span class="c1"># looking at top of POSCAR file</span>
 </span></code></pre></div>
 <details>
 <summary>Terminal Output from compress_species_line.py</summary>

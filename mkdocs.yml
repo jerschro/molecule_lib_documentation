@@ -86,12 +86,14 @@ nav:
       - ABCAnimation.to_xyz_animation : reference/ABCAnimation/to_xyz_animation.md
     - XYZAnimation :
       - XYZAnimation : reference/XYZAnimation/XYZAnimation.md
+      - XYZAnimation.convert : reference/XYZAnimation/convert.md
       - XYZAnimation.get : reference/XYZAnimation/get.md
       - XYZAnimation.get_range : reference/XYZAnimation/get_range.md
       - XYZAnimation.head : reference/XYZAnimation/head.md
       - XYZAnimation.info : reference/XYZAnimation/info.md
       - XYZAnimation.print : reference/XYZAnimation/print.md
       - XYZAnimation.tail : reference/XYZAnimation/tail.md
+      - XYZAnimation.to_xdatcar : reference/XYZAnimation/to_xdatcar.md
       - XYZAnimation.to_xyz_animation : reference/XYZAnimation/to_xyz_animation.md
     - Functions :
       - Functions : reference/Functions/index.md
@@ -104,6 +106,9 @@ nav:
       - read_xsf : reference/Functions/read_xsf.md
       - read_xyz : reference/Functions/read_xyz.md
       - read_xyz_animation : reference/Functions/read_xyz_animation.md
+
+
+
 theme:
   name: material
   features:

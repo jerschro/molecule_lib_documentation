@@ -13,10 +13,9 @@ Zn8Cu5_supercell = generate_lammps(filepath="test_files/bulk/Zn8Cu5.vasp", # fil
                                    compress_species_line=True)             # Group Atoms by species in atom order
                                    
                                    
-Zn8Cu5_supercell.save(filename="lammps.data", # filename of lammps input file
-                      filetype=".lammps")     # filetype is .lammps in order to save in lammps input format
+Zn8Cu5_supercell.to_lammps(filename="lammps.data")     # filetype is .lammps in order to save in lammps input format
 
-Zn8Cu5_supercell.save(filename="lammps.vasp") # saving supercell as a vasp file   
+Zn8Cu5_supercell.to_vasp(filename="lammps.vasp")       # saving supercell as a vasp file   
                    
 ```
 
@@ -88,6 +87,7 @@ Direct
      0.500000000         0.500000000         0.144264907
 
 ```
+
 </details>
 
 <details>
@@ -2952,11 +2952,11 @@ from molecule_lib import *
 
 lammps_data = read_lammps("data.tatb", "ABCMolecule-cartesian")   # reading lammps data file from lammps/examples/reaxff
 print("lammps_data top of POSCAR file")
-lammps_data.printt(10)                                            # looking at top of POSCAR file
+lammps_data.head()                                                # looking at top of POSCAR file
 
 lammps_compressed = lammps_data.sort(["C","H","N","O"])           # resorting atom object into order by each species
 print("lammps_data compressed species line top of POSCAR format")
-lammps_compressed.printt(10)                                      # looking at top of POSCAR file
+lammps_compressed.head()                                          # looking at top of POSCAR file
 
 
 ```

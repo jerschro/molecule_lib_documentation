@@ -12,13 +12,13 @@
         <meta name="author" content="Jeremy Schroeder">
       
       
-        <link rel="canonical" href="https://jerschro.github.io/molecule_lib_documentation/reference/XYZAnimation/to_xyz_animation/">
+        <link rel="canonical" href="https://jerschro.github.io/molecule_lib_documentation/reference/XYZAnimation/to_xdatcar/">
       
       
-        <link rel="prev" href="../to_xdatcar/">
+        <link rel="prev" href="../tail/">
       
       
-        <link rel="next" href="../../Functions/">
+        <link rel="next" href="../to_xyz_animation/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>XYZAnimation.to_xyz_animation - molecule_lib Documentation</title>
+        <title>XYZAnimation.to_xdatcar - molecule_lib Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#molecule_lib.XYZAnimation.to_xyz_animation" class="md-skip">
+        <a href="#molecule_lib.XYZAnimation.to_xdatcar" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              XYZAnimation.to_xyz_animation
+              XYZAnimation.to_xdatcar
             
           </span>
         </div>
@@ -2344,27 +2344,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../to_xdatcar/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    XYZAnimation.to_xdatcar
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -2379,7 +2358,7 @@
           
   
   <span class="md-ellipsis">
-    XYZAnimation.to_xyz_animation
+    XYZAnimation.to_xdatcar
   </span>
   
 
@@ -2390,7 +2369,7 @@
         
   
   <span class="md-ellipsis">
-    XYZAnimation.to_xyz_animation
+    XYZAnimation.to_xdatcar
   </span>
   
 
@@ -2410,9 +2389,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#molecule_lib.XYZAnimation.to_xyz_animation" class="md-nav__link">
+  <a href="#molecule_lib.XYZAnimation.to_xdatcar" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;to_xyz_animation
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;to_xdatcar
     </span>
   </a>
   
@@ -2422,6 +2401,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../to_xyz_animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XYZAnimation.to_xyz_animation
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2728,9 +2728,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#molecule_lib.XYZAnimation.to_xyz_animation" class="md-nav__link">
+  <a href="#molecule_lib.XYZAnimation.to_xdatcar" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;to_xyz_animation
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;to_xdatcar
     </span>
   </a>
   
@@ -2754,21 +2754,21 @@
   
 
 
-  <h1>XYZAnimation.to_xyz_animation</h1>
+  <h1>XYZAnimation.to_xdatcar</h1>
 
 <div class="doc doc-object doc-function">
 
 
 
-<h3 id="molecule_lib.XYZAnimation.to_xyz_animation" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="highlight language-python"><span class="n">to_xyz_animation</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span></code>
+<h3 id="molecule_lib.XYZAnimation.to_xdatcar" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>          <code class="highlight language-python"><span class="n">to_xdatcar</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">lattice_matrix</span><span class="p">)</span></code>
 
 </h3>
 
 
   <div class="doc doc-contents first">
   
-      <p>Write XYZAnimation object to .xyz animation file.</p>
+      <p>Write XYZAnimation object to .xdatcar file.</p>
 
 
 
@@ -2779,7 +2779,17 @@
             (<code>str</code>)
         –
         <div class="doc-md-description">
-          <p>Name of .xyz animation file that will be created.</p>
+          <p>Name of .xdatcar file that will be created.</p>
+        </div>
+      </li>
+      <li class="field-body">
+        <b><code>lattice_matrix</code></b>
+            (<code><a class="autorefs autorefs-internal" title="molecule_lib.LatticeMatrix" href="../../LatticeMatrix/LatticeMatrix/#molecule_lib.LatticeMatrix">LatticeMatrix</a> | list[<a class="autorefs autorefs-internal" title="molecule_lib.LatticeMatrix" href="../../LatticeMatrix/LatticeMatrix/#molecule_lib.LatticeMatrix">LatticeMatrix</a>]</code>)
+        –
+        <div class="doc-md-description">
+          <p>Either singular latticematrix or list the same length
+of animation_dict with a LatticeMatrix for every image
+of animation.</p>
         </div>
       </li>
   </ul>
@@ -2789,7 +2799,7 @@
   <p>Returns:</p>
   <ul>
       <li class="field-body">
-            <code>    .xyz animation file containing XYZAnimation object.</code>
+            <code>    .xdatcar file containing XYZAnimation object.</code>
         –
         <div class="doc-md-description">
           
@@ -2837,7 +2847,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../to_xdatcar/" class="md-footer__link md-footer__link--prev" aria-label="Previous: XYZAnimation.to_xdatcar">
+          <a href="../tail/" class="md-footer__link md-footer__link--prev" aria-label="Previous: XYZAnimation.tail">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2847,20 +2857,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                XYZAnimation.to_xdatcar
+                XYZAnimation.tail
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../Functions/" class="md-footer__link md-footer__link--next" aria-label="Next: Functions">
+          <a href="../to_xyz_animation/" class="md-footer__link md-footer__link--next" aria-label="Next: XYZAnimation.to_xyz_animation">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Functions
+                XYZAnimation.to_xyz_animation
               </div>
             </div>
             <div class="md-footer__button md-icon">

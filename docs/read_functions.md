@@ -15,7 +15,7 @@ xyz_file = vasp_file.convert()  # converting slab in vasp format to xyz format
 print("read_xyz() XYZMolecule Info:")
 xyz_file.info() # prints out information of Molecule object
 
-xyz_file.save("a-001.xyz") # saving converted object to xyz file
+xyz_file.to_xyz(filename="a-001.xyz") # saving converted object to xyz file
           
 ```
 
@@ -339,6 +339,34 @@ H     2.197094    6.469165   12.876244
         show_labels: false
 
 ::: molecule_lib.read_lammps
+    handler: python
+    options:
+        docstring_style: numpy
+        show_source: false
+        show_root_heading: true
+        show_root_full_path: false
+        show_docstring_attributes: true
+        summary: true
+        merge_init_into_class: false
+        heading_level: 2
+        docstring_section_style: list
+        show_labels: false
+
+::: molecule_lib.read_xdatcar
+    handler: python
+    options:
+        docstring_style: numpy
+        show_source: false
+        show_root_heading: true
+        show_root_full_path: false
+        show_docstring_attributes: true
+        summary: true
+        merge_init_into_class: false
+        heading_level: 2
+        docstring_section_style: list
+        show_labels: false
+
+::: molecule_lib.read_xyz_animation
     handler: python
     options:
         docstring_style: numpy
