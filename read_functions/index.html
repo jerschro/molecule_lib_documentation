@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.10ba22f1.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -504,6 +504,15 @@
   <a href="#molecule_lib.read_xyz_animation" class="md-nav__link">
     <span class="md-ellipsis">
       read_xyz_animation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#molecule_lib.read_cif" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_cif
     </span>
   </a>
   
@@ -2577,6 +2586,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../reference/Functions/read_cif/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    read_cif
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../reference/Functions/read_lammps/" class="md-nav__link">
         
   
@@ -2862,6 +2892,15 @@
   <a href="#molecule_lib.read_xyz_animation" class="md-nav__link">
     <span class="md-ellipsis">
       read_xyz_animation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#molecule_lib.read_cif" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_cif
     </span>
   </a>
   
@@ -3530,6 +3569,66 @@ or absolute path or os.path.join(os.getcwd(),'filename.xyz').</p>
 </div>
 
 
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="molecule_lib.read_cif" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">read_cif</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Reads .cif file and returns ABCMolecule instance.</p>
+
+
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b><code>filepath</code></b>
+            (<code>str</code>)
+        –
+        <div class="doc-md-description">
+          <p>Filename (if in current working directory)
+or absolute path or os.path.join(os.getcwd(),'filename.xyz').</p>
+        </div>
+      </li>
+  </ul>
+
+
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="../reference/ABCMolecule/ABCMolecule/#molecule_lib.ABCMolecule">ABCMolecule</a></code>
+        –
+        <div class="doc-md-description">
+          <p>ABCMolecule object containing structure data from .cif file.</p>
+      </div>
+      </li>
+  </ul>
+
+<details class="note" open>
+  <summary>Notes</summary>
+  <p>ABCMolecule object created using cif2pos 
+    https://github.com/tamaswells/VASP_script/blob/master/cif2poscar/cif2pos.py 
+    Copyright 2011 Li Zhu <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#122;&#104;&#117;&#108;&#105;&#112;&#114;&#101;&#115;&#101;&#110;&#116;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#122;&#104;&#117;&#108;&#105;&#112;&#114;&#101;&#115;&#101;&#110;&#116;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a> 
+    Licensed under the GPL V3 
+    Version: 1.0.1
+    Modified by NXU <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#97;&#109;&#97;&#115;&#64;&#122;&#106;&#117;&#46;&#101;&#100;&#117;&#46;&#99;&#110;">&#116;&#97;&#109;&#97;&#115;&#64;&#122;&#106;&#117;&#46;&#101;&#100;&#117;&#46;&#99;&#110;</a>
+    update: 2019.3.1
+    using symmetry data from cif2cell package
+    Modified bu IMU
+    update:2020.08.18</p>
+</details>
+  </div>
+
+</div>
+
+
 
 
 
@@ -3663,7 +3762,7 @@ or absolute path or os.path.join(os.getcwd(),'filename.xyz').</p>
     <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
   </body>
