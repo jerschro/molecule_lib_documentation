@@ -379,3 +379,18 @@ H     2.197094    6.469165   12.876244
         heading_level: 2
         docstring_section_style: list
         show_labels: false
+
+
+::: molecule_lib.read_cif
+    handler: python
+    options:
+        docstring_style: numpy
+        show_source: false
+        show_root_heading: true
+        show_root_full_path: false
+        show_docstring_attributes: true
+        summary: true
+        merge_init_into_class: false
+        heading_level: 2
+        docstring_section_style: list
+        show_labels: false

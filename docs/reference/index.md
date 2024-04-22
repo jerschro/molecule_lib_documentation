@@ -76,6 +76,7 @@
     * [XYZAnimation.to_xyz_animation](XYZAnimation/to_xyz_animation.md)
 * [Functions](Functions/index.md)
     * [generate_lammps](Functions/generate_lammps.md)
+    * [read_cif](Functions/read_cif.md)
     * [read_lammps](Functions/read_lammps.md)
     * [read_siesta](Functions/read_siesta.md)
     * [read_turbomole](Functions/read_turbomole.md)

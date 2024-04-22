@@ -1,5 +1,6 @@
 # Functions
 * [generate_lammps](generate_lammps.md)
+* [read_cif](read_cif.md)
 * [read_lammps](read_lammps.md)
 * [read_siesta](read_siesta.md)
 * [read_turbomole](read_turbomole.md)
