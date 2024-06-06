@@ -6,7 +6,9 @@ repo_name: jerschro/molecule_lib_documentation
 repo_url: https://github.com/jerschro/molecule_lib_documentation
 
 nav:
-  - Home : index.md
+  - About : about/index.md
+  - Getting Started : getting_started/index.md
+  - User Guide : user_guide/index.md
   - Read Functions : read_functions.md
   - LAMMPS : lammps.md
   # - OLD API Reference : reference.md
