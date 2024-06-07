@@ -1,9 +1,9 @@
 [Back to User Guide](index.md){ .md-button }
 
-## mol_lib Functions
+## molecule_lib Functions
 These functions will read a file and return the respective object if the file fufills the filetype requirements. See the [Functions](../reference/Functions/index.md) page for more detail.
 
-## mol_lib Functions that return...
+## molecule_lib Functions that return...
 
 
 [ABCMolecule](../reference/ABCMolecule/ABCMolecule.md) objects:

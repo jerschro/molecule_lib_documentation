@@ -1,4 +1,4 @@
-# molecule_lib reference
+# molecule_lib Reference
 
 * [ABCCoord](ABCCoord/ABCCoord.md)
     * [ABCCoord.line](ABCCoord/line.md)

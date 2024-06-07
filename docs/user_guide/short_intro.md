@@ -1,21 +1,21 @@
 
 
-# Short Introduction to mol_lib
+# Short Introduction to molecule_lib
 
 [Back to User Guide](index.md){ .md-button }
 
 This is a short introduction to molecule_lib. It is intended to give a broad overview of how the library works. To see what each method or function does, look at [Reference](../reference/index.md) page.
 
-We import mol_lib as follows:
+We import molecule_lib as follows:
 
 ``` PY
-IN [1]: import mol_lib as mol
+IN [1]: import molecule_lib as mol
 
 ```
 
-## Main objects in mol_lib
+## Main objects in molecule_lib
 
-In mol_lib there are two main objects:
+In molecule_lib there are two main objects:
 
 1. [ABCMolecule](../reference/ABCMolecule/ABCMolecule.md): a dataclass containing a molecular structure with a unit cell. 
 
