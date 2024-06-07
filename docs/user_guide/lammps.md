@@ -1,6 +1,6 @@
 ## Example Usage
 
-
+[Back to User Guide](index.md){ .md-button }
 
 ``` py title="lammps_example.py"
 from molecule_lib import *
@@ -2996,6 +2996,7 @@ Cartesian
 
 ## LAMMPS Functions
 
+### [read_lammps](../reference/Functions/read_lammps.md)
 ::: molecule_lib.read_lammps
     handler: python
     options:
@@ -3006,6 +3007,7 @@ Cartesian
       summary: true    
       docstring_section_style: list
 
+### [generate_lammps](../reference/Functions/generate_lammps.md)
 ::: molecule_lib.generate_lammps
     handler: python
     options:
@@ -3016,3 +3018,4 @@ Cartesian
       summary: true    
       docstring_section_style: list
 
+[Back to User Guide](index.md){ .md-button }

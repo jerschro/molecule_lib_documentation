@@ -1,3 +1,32 @@
+[Back to User Guide](index.md){ .md-button }
+
+## mol_lib Functions
+These functions will read a file and return the respective object if the file fufills the filetype requirements. See the [Functions](../reference/Functions/index.md) page for more detail.
+
+## mol_lib Functions that return...
+
+
+[ABCMolecule](../reference/ABCMolecule/ABCMolecule.md) objects:
+
+* [generate_lammps](../reference/Functions/generate_lammps.md)
+* [read_cif](../reference/Functions/read_cif.md)
+* [read_lammps](../reference/Functions/read_lammps.md)
+* [read_siesta](../reference/Functions/read_siesta.md)
+* [read_vasp](../reference/Functions/read_vasp.md)
+* [read_xsf](../reference/Functions/read_xsf.md)
+
+[XYZMolecule](../reference/XYZMolecule/XYZMolecule.md) objects:
+
+* [generate_lammps](../reference/Functions/generate_lammps.md)
+* [read_turbomole](../reference/Functions/read_turbomole.md)
+* [read_xsf](../reference/Functions/read_xsf.md)
+* [read_xyz](../reference/Functions/read_xyz.md)
+
+Animation objects that are returned:
+
+* [read_xdatcar](../reference/Functions/read_xdatcar.md) returns [ABCAnimation](../reference/ABCAnimation/ABCAnimation.md)
+* [read_xyz_animation](../reference/Functions/read_xyz_animation.md) returns [XYZAnimation](../reference/XYZAnimation/XYZAnimation.md) 
+
 ## Example Usage
 
 
@@ -263,11 +292,9 @@ H     2.197094    6.469165   12.876244
 </details>
 
 
+## Read Functions in more detail
 
-
-
-## Read Functions
-
+### [read_vasp](../reference/Functions/read_vasp.md)
 ::: molecule_lib.read_vasp
     handler: python
     options:
@@ -282,6 +309,7 @@ H     2.197094    6.469165   12.876244
         docstring_section_style: list
         show_labels: false
 
+### [read_turbomole](../reference/Functions/read_turbomole.md)
 ::: molecule_lib.read_turbomole
     handler: python
     options:
@@ -296,6 +324,8 @@ H     2.197094    6.469165   12.876244
         docstring_section_style: list
         show_labels: false
 
+
+### [read_xyz](../reference/Functions/read_xyz.md)
 ::: molecule_lib.read_xyz
     handler: python
     options:
@@ -310,6 +340,8 @@ H     2.197094    6.469165   12.876244
         docstring_section_style: list
         show_labels: false
 
+
+### [read_xsf](../reference/Functions/read_xsf.md)
 ::: molecule_lib.read_xsf
     handler: python
     options:
@@ -323,7 +355,9 @@ H     2.197094    6.469165   12.876244
         heading_level: 2
         docstring_section_style: list
         show_labels: false
-      
+
+### [read_siesta](../reference/Functions/read_siesta.md)
+
 ::: molecule_lib.read_siesta
     handler: python
     options:
@@ -337,6 +371,8 @@ H     2.197094    6.469165   12.876244
         heading_level: 2
         docstring_section_style: list
         show_labels: false
+
+### [read_lammps](../reference/Functions/read_lammps.md)
 
 ::: molecule_lib.read_lammps
     handler: python
@@ -352,6 +388,8 @@ H     2.197094    6.469165   12.876244
         docstring_section_style: list
         show_labels: false
 
+### [read_xdatcar](../reference/Functions/read_xdatcar.md) 
+
 ::: molecule_lib.read_xdatcar
     handler: python
     options:
@@ -365,6 +403,8 @@ H     2.197094    6.469165   12.876244
         heading_level: 2
         docstring_section_style: list
         show_labels: false
+
+### [read_xyz_animation](../reference/Functions/read_xyz_animation.md)
 
 ::: molecule_lib.read_xyz_animation
     handler: python
@@ -380,6 +420,7 @@ H     2.197094    6.469165   12.876244
         docstring_section_style: list
         show_labels: false
 
+### [read_cif](../reference/Functions/read_cif.md)
 
 ::: molecule_lib.read_cif
     handler: python
@@ -394,3 +435,5 @@ H     2.197094    6.469165   12.876244
         heading_level: 2
         docstring_section_style: list
         show_labels: false
+
+[Back to User Guide](index.md){ .md-button }

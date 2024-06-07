@@ -7,13 +7,8 @@ repo_url: https://github.com/jerschro/molecule_lib_documentation
 
 nav:
   - About : about/index.md
-  - Getting Started : getting_started/index.md
+  # - Getting Started : getting_started/index.md
   - User Guide : user_guide/index.md
-  - Read Functions : read_functions.md
-  - LAMMPS : lammps.md
-  # - OLD API Reference : reference.md
-  # - Todo Page: todo.md
-  # - Report Bugs : submit_bug.md
   - Reference:
     - Reference : reference/index.md
     - ABCCoord :
@@ -179,6 +174,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
 
 extra:
   social:
