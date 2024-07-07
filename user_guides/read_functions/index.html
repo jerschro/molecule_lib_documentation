@@ -12,28 +12,28 @@
         <meta name="author" content="Jeremy Schroeder">
       
       
-        <link rel="canonical" href="https://jerschro.github.io/molecule_lib_documentation/reference/ABCMolecule/ABCMolecule/">
+        <link rel="canonical" href="https://jerschro.github.io/molecule_lib_documentation/user_guides/read_functions/">
       
       
-        <link rel="prev" href="../../LatticeMatrix/getcommentline/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../add_coords/">
+        <link rel="next" href="../lammps/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
-        <title>ABCMolecule - molecule_lib Documentation</title>
+        <title>Read Functions - molecule_lib Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.10ba22f1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#molecule_lib.ABCMolecule" class="md-skip">
+        <a href="#molecule_lib-functions" class="md-skip">
           Skip to content
         </a>
       
@@ -92,11 +92,9 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="molecule_lib Documentation" class="md-header__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
+    <a href="../.." title="molecule_lib Documentation" class="md-header__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -116,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ABCMolecule
+              Read Functions
             
           </span>
         </div>
@@ -181,18 +179,11 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -223,8 +214,14 @@
     
   </nav>
   
+</header>
     
+    <div class="md-container" data-md-component="container">
       
+      
+        
+          
+            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -234,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -251,29 +248,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../about/" class="md-tabs__link">
+      <a href="../../about/" class="md-tabs__link">
         
   
     
   
   About
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../user_guide/" class="md-tabs__link">
-        
-  
-    
-  
-  User Guide
 
       </a>
     </li>
@@ -289,8 +269,30 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
+  
+    
+  
+  User Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/" class="md-tabs__link">
+          
+  
+    
   
   Reference
 
@@ -303,13 +305,7 @@
     </ul>
   </div>
 </nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -328,7 +324,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="molecule_lib Documentation" class="md-nav__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
+    <a href="../.." title="molecule_lib Documentation" class="md-nav__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -358,7 +354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -378,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../about/" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -395,39 +391,29 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../user_guide/" class="md-nav__link">
+  
+    
+    
+      
         
-  
-  <span class="md-ellipsis">
-    User Guide
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
+          
+        
       
+        
       
-  
-  
-    
-  
-  
-  
-    
+        
+      
+        
+      
     
     
       
         
         
       
-      
-        
       
     
     
@@ -435,26 +421,115 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
-    Reference
+    User Guides
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Reference
+            User Guides
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Read Functions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Read Functions
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#molecule_lib-functions-that-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      molecule_lib Functions that return...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
             
               
                 
@@ -463,11 +538,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../lammps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Reference
+    LAMMPS
   </span>
   
 
@@ -483,35 +558,144 @@
   
   
   
-    
-    
+    <li class="md-nav__item">
+      <a href="../short_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Short Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
+      
+  
+  
+  
+  
+    
+    
       
         
           
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/ABCCoord/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     ABCCoord
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2">
@@ -521,25 +705,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ABCCoord/ABCCoord/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ABCCoord
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -548,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCCoord/line/" class="md-nav__link">
+      <a href="../../reference/ABCCoord/line/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -578,33 +743,44 @@
   
     
     
-    
-      
       
         
           
-          
+        
+      
         
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/XYZCoord/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     XYZCoord
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_3">
@@ -614,25 +790,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../XYZCoord/XYZCoord/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    XYZCoord
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -641,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZCoord/line/" class="md-nav__link">
+      <a href="../../reference/XYZCoord/line/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -671,33 +828,50 @@
   
     
     
-    
-      
       
         
           
-          
+        
+      
+        
+      
+        
+      
+        
+      
         
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/LatticeMatrix/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     LatticeMatrix
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_4">
@@ -707,25 +881,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../LatticeMatrix/LatticeMatrix/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    LatticeMatrix
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -734,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LatticeMatrix/getabc/" class="md-nav__link">
+      <a href="../../reference/LatticeMatrix/getabc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -755,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LatticeMatrix/getanglesdeg/" class="md-nav__link">
+      <a href="../../reference/LatticeMatrix/getanglesdeg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LatticeMatrix/getanglesrad/" class="md-nav__link">
+      <a href="../../reference/LatticeMatrix/getanglesrad/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -797,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LatticeMatrix/getcommentline/" class="md-nav__link">
+      <a href="../../reference/LatticeMatrix/getcommentline/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -823,111 +978,100 @@
                 
   
   
-    
   
   
-  
     
     
-    
-      
       
         
           
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
         
           
-          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/ABCMolecule/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     ABCMolecule
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             ABCMolecule
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    ABCMolecule
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    ABCMolecule
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#molecule_lib.ABCMolecule" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ABCMolecule
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
               
             
               
@@ -937,7 +1081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../add_coords/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/add_coords/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -958,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../append/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/append/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -979,7 +1123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../convert/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/convert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1000,7 +1144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../delete/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/delete/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1021,7 +1165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../freeze_atoms/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/freeze_atoms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1042,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generate_supercell/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/generate_supercell/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1063,7 +1207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../get/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/get/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,7 +1228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../get_atoms/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/get_atoms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1105,7 +1249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../get_centroid/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/get_centroid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1126,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../head/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/head/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1147,7 +1291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../info/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1168,7 +1312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manipulate/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/manipulate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1189,7 +1333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../move/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/move/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1210,7 +1354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../print/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/print/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1231,7 +1375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rotate/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/rotate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1252,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sort/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/sort/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1273,7 +1417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../switch_to_cartesian/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/switch_to_cartesian/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1294,7 +1438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../switch_to_direct/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/switch_to_direct/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1315,7 +1459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tail/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/tail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1336,7 +1480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../to_lammps/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/to_lammps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1357,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../to_turbomole/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/to_turbomole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1378,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../to_vasp/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/to_vasp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1399,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../to_xyz/" class="md-nav__link">
+      <a href="../../reference/ABCMolecule/to_xyz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1429,33 +1573,82 @@
   
     
     
-    
-      
       
         
           
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
         
           
-          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/XYZMolecule/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     XYZMolecule
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_6">
@@ -1465,25 +1658,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../XYZMolecule/XYZMolecule/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    XYZMolecule
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1492,7 +1666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/add_coords/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/add_coords/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1513,7 +1687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/append/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/append/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1534,7 +1708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/convert/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/convert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1555,7 +1729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/delete/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/delete/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1576,7 +1750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/generate_supercell/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/generate_supercell/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1597,7 +1771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/get/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/get/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1618,7 +1792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/get_atoms/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/get_atoms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1639,7 +1813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/get_centroid/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/get_centroid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1660,7 +1834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/head/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/head/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1681,7 +1855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/info/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1702,7 +1876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/manipulate/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/manipulate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1723,7 +1897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/move/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/move/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1744,7 +1918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/print/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/print/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1765,7 +1939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/rotate/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/rotate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1786,7 +1960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/sort/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/sort/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1807,7 +1981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/tail/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/tail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1828,7 +2002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/to_lammps/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/to_lammps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1849,7 +2023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/to_turbomole/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/to_turbomole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1870,7 +2044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/to_vasp/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/to_vasp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1891,7 +2065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZMolecule/to_xyz/" class="md-nav__link">
+      <a href="../../reference/XYZMolecule/to_xyz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1921,33 +2095,60 @@
   
     
     
-    
-      
       
         
           
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
         
           
-          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/ABCAnimation/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     ABCAnimation
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_7">
@@ -1957,25 +2158,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ABCAnimation/ABCAnimation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ABCAnimation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1984,7 +2166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCAnimation/convert/" class="md-nav__link">
+      <a href="../../reference/ABCAnimation/convert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2005,7 +2187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCAnimation/get/" class="md-nav__link">
+      <a href="../../reference/ABCAnimation/get/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2026,7 +2208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCAnimation/get_range/" class="md-nav__link">
+      <a href="../../reference/ABCAnimation/get_range/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2047,7 +2229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCAnimation/head/" class="md-nav__link">
+      <a href="../../reference/ABCAnimation/head/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2068,7 +2250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCAnimation/info/" class="md-nav__link">
+      <a href="../../reference/ABCAnimation/info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2089,7 +2271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCAnimation/print/" class="md-nav__link">
+      <a href="../../reference/ABCAnimation/print/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2110,7 +2292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCAnimation/tail/" class="md-nav__link">
+      <a href="../../reference/ABCAnimation/tail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2131,7 +2313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCAnimation/to_xdatcar/" class="md-nav__link">
+      <a href="../../reference/ABCAnimation/to_xdatcar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2152,7 +2334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ABCAnimation/to_xyz_animation/" class="md-nav__link">
+      <a href="../../reference/ABCAnimation/to_xyz_animation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2182,33 +2364,60 @@
   
     
     
-    
-      
       
         
           
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
         
           
-          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/XYZAnimation/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     XYZAnimation
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_8">
@@ -2218,25 +2427,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../XYZAnimation/XYZAnimation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    XYZAnimation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2245,7 +2435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZAnimation/convert/" class="md-nav__link">
+      <a href="../../reference/XYZAnimation/convert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2266,7 +2456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZAnimation/get/" class="md-nav__link">
+      <a href="../../reference/XYZAnimation/get/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2287,7 +2477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZAnimation/get_range/" class="md-nav__link">
+      <a href="../../reference/XYZAnimation/get_range/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2308,7 +2498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZAnimation/head/" class="md-nav__link">
+      <a href="../../reference/XYZAnimation/head/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2329,7 +2519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZAnimation/info/" class="md-nav__link">
+      <a href="../../reference/XYZAnimation/info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2350,7 +2540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZAnimation/print/" class="md-nav__link">
+      <a href="../../reference/XYZAnimation/print/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2371,7 +2561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZAnimation/tail/" class="md-nav__link">
+      <a href="../../reference/XYZAnimation/tail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2392,7 +2582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZAnimation/to_xdatcar/" class="md-nav__link">
+      <a href="../../reference/XYZAnimation/to_xdatcar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2413,7 +2603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../XYZAnimation/to_xyz_animation/" class="md-nav__link">
+      <a href="../../reference/XYZAnimation/to_xyz_animation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2443,33 +2633,62 @@
   
     
     
-    
-      
       
         
           
-          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
         
           
-          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/Functions/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Functions
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_9">
@@ -2479,25 +2698,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Functions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Functions
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2506,7 +2706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/generate_lammps/" class="md-nav__link">
+      <a href="../../reference/Functions/generate_lammps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2527,7 +2727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/read_cif/" class="md-nav__link">
+      <a href="../../reference/Functions/read_cif/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2548,7 +2748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/read_lammps/" class="md-nav__link">
+      <a href="../../reference/Functions/read_lammps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2569,7 +2769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/read_siesta/" class="md-nav__link">
+      <a href="../../reference/Functions/read_siesta/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2590,7 +2790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/read_turbomole/" class="md-nav__link">
+      <a href="../../reference/Functions/read_turbomole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2611,7 +2811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/read_vasp/" class="md-nav__link">
+      <a href="../../reference/Functions/read_vasp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2632,7 +2832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/read_xdatcar/" class="md-nav__link">
+      <a href="../../reference/Functions/read_xdatcar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2653,7 +2853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/read_xsf/" class="md-nav__link">
+      <a href="../../reference/Functions/read_xsf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2674,7 +2874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/read_xyz/" class="md-nav__link">
+      <a href="../../reference/Functions/read_xyz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2695,7 +2895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Functions/read_xyz_animation/" class="md-nav__link">
+      <a href="../../reference/Functions/read_xyz_animation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2741,6 +2941,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2749,9 +2951,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#molecule_lib.ABCMolecule" class="md-nav__link">
+  <a href="#molecule_lib-functions-that-return" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ABCMolecule
+      molecule_lib Functions that return...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
     </span>
   </a>
   
@@ -2775,130 +2986,285 @@
   
 
 
-  <h1>ABCMolecule</h1>
+<p><a href="../../"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1H392c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9.1-2.8v-69.6H32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7l255.4 224.5c8 7 12 15 11 24z"/></svg></span></a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span> <a href="../">User Guides</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span> <strong>Read Functions</strong></p>
+<h1 id="molecule_lib-functions">molecule_lib Functions</h1>
+<p>These functions will read a file and return the respective object if the file fufills the filetype requirements. See the <a href="../../reference/Functions/">Reference/Functions</a> page for more detail.</p>
+<h2 id="molecule_lib-functions-that-return">molecule_lib Functions that return...</h2>
+<p><a href="../../reference/ABCMolecule/">ABCMolecule</a> objects:</p>
+<ul>
+<li><a href="../../reference/Functions/generate_lammps/">generate_lammps</a></li>
+<li><a href="../../reference/Functions/read_cif/">read_cif</a></li>
+<li><a href="../../reference/Functions/read_lammps/">read_lammps</a></li>
+<li><a href="../../reference/Functions/read_siesta/">read_siesta</a></li>
+<li><a href="../../reference/Functions/read_vasp/">read_vasp</a></li>
+<li><a href="../../reference/Functions/read_xsf/">read_xsf</a></li>
+</ul>
+<p><a href="../../reference/XYZMolecule/">XYZMolecule</a> objects:</p>
+<ul>
+<li><a href="../../reference/Functions/generate_lammps/">generate_lammps</a></li>
+<li><a href="../../reference/Functions/read_turbomole/">read_turbomole</a></li>
+<li><a href="../../reference/Functions/read_xsf/">read_xsf</a></li>
+<li><a href="../../reference/Functions/read_xyz/">read_xyz</a></li>
+</ul>
+<p>Animation objects that are returned:</p>
+<ul>
+<li><a href="../../reference/Functions/read_xdatcar/">read_xdatcar</a> returns <a href="../../reference/ABCAnimation/">ABCAnimation</a></li>
+<li><a href="../../reference/Functions/read_xyz_animation/">read_xyz_animation</a> returns <a href="../../reference/XYZAnimation/">XYZAnimation</a> </li>
+</ul>
+<h2 id="example-usage">Example Usage</h2>
+<div class="highlight"><span class="filename">read_functions_example.py</span><pre><span></span><code><span class="kn">from</span> <span class="nn">molecule_lib</span> <span class="kn">import</span> <span class="o">*</span>
 
-<div class="doc doc-object doc-class">
+<span class="c1"># example usage of reading a .vasp file, converting to .xyz and saving the .xyz file</span>
 
+<span class="n">vasp_file</span> <span class="o">=</span> <span class="n">read_vasp</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s2">&quot;test_files/slabs/a-001.vasp&quot;</span><span class="p">)</span> <span class="c1"># reading vasp slab</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;read_vasp() ABCMolecule Info:&quot;</span><span class="p">)</span>
+<span class="n">vasp_file</span><span class="o">.</span><span class="n">info</span><span class="p">()</span> <span class="c1"># prints out information of Molecule object</span>
 
+<span class="n">xyz_file</span> <span class="o">=</span> <span class="n">vasp_file</span><span class="o">.</span><span class="n">convert</span><span class="p">()</span>  <span class="c1"># converting slab in vasp format to xyz format</span>
 
-<h2 id="molecule_lib.ABCMolecule" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code class="highlight language-python"><span class="n">ABCMolecule</span><span class="p">(</span><span class="n">unitcell</span><span class="p">,</span> <span class="n">positional</span><span class="p">,</span> <span class="n">atoms</span><span class="p">,</span> <span class="n">comment_line</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">frozen_atoms</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;&#39;</span><span class="p">]],</span> <span class="n">filetype</span><span class="o">=</span><span class="s1">&#39;unitcell&#39;</span><span class="p">)</span></code>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;read_xyz() XYZMolecule Info:&quot;</span><span class="p">)</span>
+<span class="n">xyz_file</span><span class="o">.</span><span class="n">info</span><span class="p">()</span> <span class="c1"># prints out information of Molecule object</span>
 
-</h2>
+<span class="n">xyz_file</span><span class="o">.</span><span class="n">to_xyz</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;a-001.xyz&quot;</span><span class="p">)</span> <span class="c1"># saving converted object to xyz file</span>
+</code></pre></div>
+<details>
+<summary>Terminal Output from read_functions_example.py</summary>
 
+<div class="highlight"><pre><span></span><code>read_vasp() ABCMolecule Info:
+type: ABCMolecule
+filetype: .vasp
+total atoms: 96
+species info: {&#39;Al&#39;: &#39;24&#39;, &#39;O&#39;: &#39;48&#39;, &#39;H&#39;: &#39;24&#39;}
+comment line: &#39;3_OPT_cell (Generated by CrystalMaker X for Windows)&#39;
+lattice constant: 1.0
+lattice matrix:
+[8.7807035882, 0.1780459095, 3.7774054998]
+[-1.0698364258, 0.1158044938, -9.5608328356]
+[-0.9853331692, 23.1955056605, -0.2016342785]
+positional: True
 
-  <div class="doc doc-contents first">
-
-  
-      <p>Class for ABC molecule object.</p>
-
-
-
-  <p>Parameters:</p>
-  <ul>
-      <li class="field-body">
-        <b><code>unitcell</code></b>
-            (<code><a class="autorefs autorefs-internal" title="molecule_lib.LatticeMatrix" href="../../LatticeMatrix/LatticeMatrix/#molecule_lib.LatticeMatrix">LatticeMatrix</a></code>)
-        –
-        <div class="doc-md-description">
-          <p>Instance of LatticeMatrix dataclass needed for ABCMolecule class.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><code>positional</code></b>
-            (<code>bool</code>, default:
-                <code>True</code>
-)
-        –
-        <div class="doc-md-description">
-          <p>If True, given ABCCoords are positional coordinates. If False, given ABCCoords are cartesian coordinates in Angstroms.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><code>atoms</code></b>
-            (<code>list[<a class="autorefs autorefs-internal" title="molecule_lib.ABCCoord" href="../../ABCCoord/ABCCoord/#molecule_lib.ABCCoord">ABCCoord</a>]</code>)
-        –
-        <div class="doc-md-description">
-          <p>List of Atoms from atomic file.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><code>comment_line</code></b>
-            (<code>str</code>, default:
-                <code>is &#34; &#34;</code>
-)
-        –
-        <div class="doc-md-description">
-          <p>Comment line of atomic file.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><code>frozen_atoms</code></b>
-            (<code>optional list[list[str]]</code>, default:
-                <code>[[&#39;&#39;]]</code>
-)
-        –
-        <div class="doc-md-description">
-          <p>If there are frozen atoms, indicate them here.</p>
-        </div>
-      </li>
-      <li class="field-body">
-        <b><code>filetype</code></b>
-            (<code>str</code>, default:
-                <code>is &#34;unitcell&#34;</code>
-)
-        –
-        <div class="doc-md-description">
-          <p>The original filetype the object instance was.</p>
-        </div>
-      </li>
-  </ul>
-
-<details class="fields" open>
-  <summary>Fields</summary>
-  <p>species_line: list[str]
-    List of each species in species line. Similar to line 5 in VASP file.</p>
-<p>species_amount: list[int]
-    List of the amount of each species in species line. Similar to line 6 in VASP file.</p>
-<p>total: int
-    Total amount of atoms in ABCMolecule object.</p>
-<p>amount_dict: dict[str, int]
-    Dictionary with keys as species and fields of amount of each species.</p>
+read_xyz() XYZMolecule Info:
+type: XYZMolecule
+filetype: .vasp
+total atoms: 96
+species info: {&#39;Al&#39;: &#39;24&#39;, &#39;O&#39;: &#39;48&#39;, &#39;H&#39;: &#39;24&#39;}
+comment line: &#39;3_OPT_cell (Generated by CrystalMaker X for Windows)&#39;
+</code></pre></div>
 </details>
 
+<details>
+<summary>Initial Vasp File</summary>
 
-  <p>Returns:</p>
-  <ul>
-      <li class="field-body">
-            <code><a class="autorefs autorefs-internal" title="molecule_lib.ABCMolecule" href="#molecule_lib.ABCMolecule">ABCMolecule</a></code>
-        –
-        <div class="doc-md-description">
-          <p>ABCMolecule object with defined molecule information.</p>
-      </div>
-      </li>
-  </ul>
+<div class="highlight"><span class="filename">a-001.vasp</span><pre><span></span><code>3_OPT_cell (Generated by CrystalMaker X for Windows)
+    1.0
+       8.7807035882    0.1780459095    3.7774054998
+      -1.0698364258    0.1158044938   -9.5608328356
+      -0.9853331692   23.1955056605   -0.2016342785
+ Al  O  H 
+ 24  48  24 
+Direct
+       0.4883770000    0.4991110000    0.4120980000
+       0.4883770000    0.9991110000    0.4120980000
+       0.9883770000    0.4991110000    0.4120980000
+       0.9883770000    0.9991110000    0.4120980000
+       0.4937535000    0.4900390000    0.5858550000
+       0.4937535000    0.9900390000    0.5858550000
+       0.9937535000    0.4900390000    0.5858550000
+       0.9937535000    0.9900390000    0.5858550000
+       0.3246275000    0.1543390000    0.6004500000
+       0.3246275000    0.6543390000    0.6004500000
+       0.8246275000    0.1543390000    0.6004500000
+       0.8246275000    0.6543390000    0.6004500000
+       0.3233475000    0.1606580000    0.4875070000
+       0.3233475000    0.6606580000    0.4875070000
+       0.8233475000    0.1606580000    0.4875070000
+       0.8233475000    0.6606580000    0.4875070000
+       0.1541040000    0.3308545000    0.3982010000
+       0.1541040000    0.8308545000    0.3982010000
+       0.6541040000    0.3308545000    0.3982010000
+       0.6541040000    0.8308545000    0.3982010000
+       0.1568155000    0.3269960000    0.5109870000
+       0.1568155000    0.8269960000    0.5109870000
+       0.6568155000    0.3269960000    0.5109870000
+       0.6568155000    0.8269960000    0.5109870000
+       0.4993540000    0.3291830000    0.4519950000
+       0.4993540000    0.8291830000    0.4519950000
+       0.9993540000    0.3291830000    0.4519950000
+       0.9993540000    0.8291830000    0.4519950000
+       0.1540070000    0.1732485000    0.4520950000
+       0.1540070000    0.6732485000    0.4520950000
+       0.6540070000    0.1732485000    0.4520950000
+       0.6540070000    0.6732485000    0.4520950000
+       0.3118170000    0.4852300000    0.4521950000
+       0.3118170000    0.9852300000    0.4521950000
+       0.8118170000    0.4852300000    0.4521950000
+       0.8118170000    0.9852300000    0.4521950000
+       0.4798760000    0.1573710000    0.5458360000
+       0.4798760000    0.6573710000    0.5458360000
+       0.9798760000    0.1573710000    0.5458360000
+       0.9798760000    0.6573710000    0.5458360000
+       0.3260795000    0.3148100000    0.5463350000
+       0.3260795000    0.8148100000    0.5463350000
+       0.8260795000    0.3148100000    0.5463350000
+       0.8260795000    0.8148100000    0.5463350000
+       0.1698015000    0.0035290000    0.5457890000
+       0.1698015000    0.5035290000    0.5457890000
+       0.6698015000    0.0035290000    0.5457890000
+       0.6698015000    0.5035290000    0.5457890000
+       0.1374020000    0.4910515000    0.3597130000
+       0.1374020000    0.9910515000    0.3597130000
+       0.6374020000    0.4910515000    0.3597130000
+       0.6374020000    0.9910515000    0.3597130000
+       0.4842285000    0.1648825000    0.3593080000
+       0.4842285000    0.6648825000    0.3593080000
+       0.9842285000    0.1648825000    0.3593080000
+       0.9842285000    0.6648825000    0.3593080000
+       0.3274385000    0.3526040000    0.3600150000
+       0.3274385000    0.8526040000    0.3600150000
+       0.8274385000    0.3526040000    0.3600150000
+       0.8274385000    0.8526040000    0.3600150000
+       0.3351940000    0.4891400000    0.6387780000
+       0.3351940000    0.9891400000    0.6387780000
+       0.8351940000    0.4891400000    0.6387780000
+       0.8351940000    0.9891400000    0.6387780000
+       0.4949070000    0.3255040000    0.6355830000
+       0.4949070000    0.8255040000    0.6355830000
+       0.9949070000    0.3255040000    0.6355830000
+       0.9949070000    0.8255040000    0.6355830000
+       0.1539585000    0.1412000000    0.6386320000
+       0.1539585000    0.6412000000    0.6386320000
+       0.6539585000    0.1412000000    0.6386320000
+       0.6539585000    0.6412000000    0.6386320000
+       0.2489850000    0.5742065000    0.3541710000
+       0.2489850000    0.0742065000    0.3541710000
+       0.7489850000    0.0742065000    0.3541710000
+       0.7489850000    0.5742065000    0.3541710000
+       0.0105670000    0.1420440000    0.3218080000
+       0.0105670000    0.6420440000    0.3218080000
+       0.5105670000    0.1420440000    0.3218080000
+       0.5105670000    0.6420440000    0.3218080000
+       0.3593145000    0.2727825000    0.3528190000
+       0.3593145000    0.7727825000    0.3528190000
+       0.8593145000    0.2727825000    0.3528190000
+       0.8593145000    0.7727825000    0.3528190000
+       0.3919260000    0.0214090000    0.6755300000
+       0.3919260000    0.5214090000    0.6755300000
+       0.8919260000    0.0214090000    0.6755300000
+       0.8919260000    0.5214090000    0.6755300000
+       0.0152975000    0.3539400000    0.6757480000
+       0.0152975000    0.8539400000    0.6757480000
+       0.5152975000    0.3539400000    0.6757480000
+       0.5152975000    0.8539400000    0.6757480000
+       0.1588230000    0.2458695000    0.6383440000
+       0.1588230000    0.7458695000    0.6383440000
+       0.6588230000    0.2458695000    0.6383440000
+       0.6588230000    0.7458695000    0.6383440000
+</code></pre></div>
+</details>
 
+<details>
+<summary>Converted XYZ File</summary>
 
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-
-</div><p><a class="md-button" href="../../">Back to Reference</a></p>
+<div class="highlight"><span class="filename">a-001.xyz</span><pre><span></span><code>96
+3_OPT_cell (Generated by CrystalMaker X for Windows)
+Al    1.741640    4.323477    8.312563
+Al   -0.637363    8.504651    8.312563
+Al    6.521840    4.323477    8.312563
+Al    4.142837    8.504651    8.312563
+Al    1.836206    4.310749   11.817471
+Al   -0.542797    8.491923   11.817471
+Al    6.616406    4.310749   11.817471
+Al    4.237403    8.491923   11.817471
+Al    1.816557    1.508812   12.111872
+Al   -0.562446    5.689986   12.111872
+Al    6.596757    1.508812   12.111872
+Al    4.217754    5.689986   12.111872
+Al    1.774254    1.520616    9.833662
+Al   -0.604749    5.701790    9.833662
+Al    6.554454    1.520616    9.833662
+Al    4.175451    5.701790    9.833662
+Al   -0.653578    2.911408    8.032242
+Al   -3.032581    7.092582    8.032242
+Al    4.126622    2.911408    8.032242
+Al    1.747619    7.092582    8.032242
+Al   -0.609296    2.920124   10.307285
+Al   -2.988299    7.101298   10.307285
+Al    4.170904    2.920124   10.307285
+Al    1.791901    7.101298   10.307285
+O     2.655103    2.916977    9.117338
+O     0.276100    7.098151    9.117338
+O     7.435303    2.916977    9.117338
+O     5.056300    7.098151    9.117338
+O     0.095385    1.613035    9.119355
+O    -2.283618    5.794209    9.119355
+O     4.875585    1.613035    9.119355
+O     2.496582    5.794209    9.119355
+O     0.119702    4.221969    9.121372
+O    -2.259301    8.403143    9.121372
+O     4.899902    4.221969    9.121372
+O     2.520899    8.403143    9.121372
+O     3.286368    1.514323   11.010235
+O     0.907365    5.695497   11.010235
+O     8.066568    1.514323   11.010235
+O     5.687565    5.695497   11.010235
+O     1.066917    2.831064   11.020301
+O    -1.312086    7.012238   11.020301
+O     5.847117    2.831064   11.020301
+O     3.468114    7.012238   11.020301
+O     1.053913    0.227825   11.009287
+O    -1.325090    4.408999   11.009287
+O     5.834113    0.227825   11.009287
+O     3.455110    4.408999   11.009287
+O    -1.575474    4.237047    7.255888
+O    -3.954477    8.418221    7.255888
+O     3.204726    4.237047    7.255888
+O     0.825723    8.418221    7.255888
+O     3.292240    1.509361    7.247718
+O     0.913237    5.690535    7.247718
+O     8.072440    1.509361    7.247718
+O     5.693437    5.690535    7.247718
+O     0.900085    3.079410    7.261979
+O    -1.478918    7.260584    7.261979
+O     5.680285    3.079410    7.261979
+O     3.301282    7.260584    7.261979
+O     0.324592    4.322461   12.884998
+O    -2.054411    8.503635   12.884998
+O     5.104792    4.322461   12.884998
+O     2.725789    8.503635   12.884998
+O     2.630093    2.952919   12.820551
+O     0.251090    7.134093   12.820551
+O     7.410293    2.952919   12.820551
+O     5.031290    7.134093   12.820551
+O     0.247408    1.412813   12.882053
+O    -2.131595    5.593987   12.882053
+O     5.027608    1.412813   12.882053
+O     2.648605    5.593987   12.882053
+H    -0.904348    4.930404    7.144098
+H     1.474655    0.749230    7.144098
+H     6.254855    0.749230    7.144098
+H     3.875852    4.930404    7.144098
+H    -1.127487    1.304752    6.491294
+H    -3.506490    5.485926    6.491294
+H     3.652713    1.304752    6.491294
+H     1.273710    5.485926    6.491294
+H     1.584624    2.409300    7.116827
+H    -0.794379    6.590474    7.116827
+H     6.364824    2.409300    7.116827
+H     3.985821    6.590474    7.116827
+H     3.092439    0.424486   13.626335
+H     0.713436    4.605660   13.626335
+H     7.872639    0.424486   13.626335
+H     5.493636    4.605660   13.626335
+H    -2.090464    3.205305   13.630732
+H    -4.469467    7.386479   13.630732
+H     2.689736    3.205305   13.630732
+H     0.310733    7.386479   13.630732
+H    -0.204103    2.287991   12.876244
+H    -2.583106    6.469165   12.876244
+H     4.576097    2.287991   12.876244
+H     2.197094    6.469165   12.876244
+</code></pre></div>
+</details>
 
 
 
@@ -2916,8 +3282,6 @@
             </div>
           
           
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -2930,46 +3294,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../../LatticeMatrix/getcommentline/" class="md-footer__link md-footer__link--prev" aria-label="Previous: LatticeMatrix.getcommentline">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                LatticeMatrix.getcommentline
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../add_coords/" class="md-footer__link md-footer__link--next" aria-label="Next: ABCMolecule.add_coords">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                ABCMolecule.add_coords
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3030,11 +3354,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.indexes", "navigation.top", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
   </body>
