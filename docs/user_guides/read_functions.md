@@ -1,12 +1,13 @@
-[Back to User Guide](index.md){ .md-button }
+[:fontawesome-solid-house:](../index.md) :fontawesome-solid-angle-right: [User Guides](index.md) :fontawesome-solid-angle-right: **Read Functions**
 
-## molecule_lib Functions
-These functions will read a file and return the respective object if the file fufills the filetype requirements. See the [Functions](../reference/Functions/index.md) page for more detail.
+
+# molecule_lib Functions
+These functions will read a file and return the respective object if the file fufills the filetype requirements. See the [Reference/Functions](../reference/Functions/index.md) page for more detail.
 
 ## molecule_lib Functions that return...
 
 
-[ABCMolecule](../reference/ABCMolecule/ABCMolecule.md) objects:
+[ABCMolecule](../reference/ABCMolecule/index.md) objects:
 
 * [generate_lammps](../reference/Functions/generate_lammps.md)
 * [read_cif](../reference/Functions/read_cif.md)
@@ -15,7 +16,7 @@ These functions will read a file and return the respective object if the file fu
 * [read_vasp](../reference/Functions/read_vasp.md)
 * [read_xsf](../reference/Functions/read_xsf.md)
 
-[XYZMolecule](../reference/XYZMolecule/XYZMolecule.md) objects:
+[XYZMolecule](../reference/XYZMolecule/index.md) objects:
 
 * [generate_lammps](../reference/Functions/generate_lammps.md)
 * [read_turbomole](../reference/Functions/read_turbomole.md)
@@ -24,8 +25,8 @@ These functions will read a file and return the respective object if the file fu
 
 Animation objects that are returned:
 
-* [read_xdatcar](../reference/Functions/read_xdatcar.md) returns [ABCAnimation](../reference/ABCAnimation/ABCAnimation.md)
-* [read_xyz_animation](../reference/Functions/read_xyz_animation.md) returns [XYZAnimation](../reference/XYZAnimation/XYZAnimation.md) 
+* [read_xdatcar](../reference/Functions/read_xdatcar.md) returns [ABCAnimation](../reference/ABCAnimation/index.md)
+* [read_xyz_animation](../reference/Functions/read_xyz_animation.md) returns [XYZAnimation](../reference/XYZAnimation/index.md) 
 
 ## Example Usage
 
@@ -291,149 +292,3 @@ H     2.197094    6.469165   12.876244
 ```
 </details>
 
-
-## Read Functions in more detail
-
-### [read_vasp](../reference/Functions/read_vasp.md)
-::: molecule_lib.read_vasp
-    handler: python
-    options:
-        docstring_style: numpy
-        show_source: false
-        show_root_heading: true
-        show_root_full_path: false
-        show_docstring_attributes: true
-        summary: true
-        merge_init_into_class: false
-        heading_level: 2
-        docstring_section_style: list
-        show_labels: false
-
-### [read_turbomole](../reference/Functions/read_turbomole.md)
-::: molecule_lib.read_turbomole
-    handler: python
-    options:
-        docstring_style: numpy
-        show_source: false
-        show_root_heading: true
-        show_root_full_path: false
-        show_docstring_attributes: true
-        summary: true
-        merge_init_into_class: false
-        heading_level: 2
-        docstring_section_style: list
-        show_labels: false
-
-
-### [read_xyz](../reference/Functions/read_xyz.md)
-::: molecule_lib.read_xyz
-    handler: python
-    options:
-        docstring_style: numpy
-        show_source: false
-        show_root_heading: true
-        show_root_full_path: false
-        show_docstring_attributes: true
-        summary: true
-        merge_init_into_class: false
-        heading_level: 2
-        docstring_section_style: list
-        show_labels: false
-
-
-### [read_xsf](../reference/Functions/read_xsf.md)
-::: molecule_lib.read_xsf
-    handler: python
-    options:
-        docstring_style: numpy
-        show_source: false
-        show_root_heading: true
-        show_root_full_path: false
-        show_docstring_attributes: true
-        summary: true
-        merge_init_into_class: false
-        heading_level: 2
-        docstring_section_style: list
-        show_labels: false
-
-### [read_siesta](../reference/Functions/read_siesta.md)
-
-::: molecule_lib.read_siesta
-    handler: python
-    options:
-        docstring_style: numpy
-        show_source: false
-        show_root_heading: true
-        show_root_full_path: false
-        show_docstring_attributes: true
-        summary: true
-        merge_init_into_class: false
-        heading_level: 2
-        docstring_section_style: list
-        show_labels: false
-
-### [read_lammps](../reference/Functions/read_lammps.md)
-
-::: molecule_lib.read_lammps
-    handler: python
-    options:
-        docstring_style: numpy
-        show_source: false
-        show_root_heading: true
-        show_root_full_path: false
-        show_docstring_attributes: true
-        summary: true
-        merge_init_into_class: false
-        heading_level: 2
-        docstring_section_style: list
-        show_labels: false
-
-### [read_xdatcar](../reference/Functions/read_xdatcar.md) 
-
-::: molecule_lib.read_xdatcar
-    handler: python
-    options:
-        docstring_style: numpy
-        show_source: false
-        show_root_heading: true
-        show_root_full_path: false
-        show_docstring_attributes: true
-        summary: true
-        merge_init_into_class: false
-        heading_level: 2
-        docstring_section_style: list
-        show_labels: false
-
-### [read_xyz_animation](../reference/Functions/read_xyz_animation.md)
-
-::: molecule_lib.read_xyz_animation
-    handler: python
-    options:
-        docstring_style: numpy
-        show_source: false
-        show_root_heading: true
-        show_root_full_path: false
-        show_docstring_attributes: true
-        summary: true
-        merge_init_into_class: false
-        heading_level: 2
-        docstring_section_style: list
-        show_labels: false
-
-### [read_cif](../reference/Functions/read_cif.md)
-
-::: molecule_lib.read_cif
-    handler: python
-    options:
-        docstring_style: numpy
-        show_source: false
-        show_root_heading: true
-        show_root_full_path: false
-        show_docstring_attributes: true
-        summary: true
-        merge_init_into_class: false
-        heading_level: 2
-        docstring_section_style: list
-        show_labels: false
-
-[Back to User Guide](index.md){ .md-button }

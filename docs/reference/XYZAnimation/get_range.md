@@ -1,3 +1,9 @@
+---
+hide:
+ - toc
+---
+[:fontawesome-solid-house:](../../index.md) :fontawesome-solid-angle-right: [Reference](../index.md) :fontawesome-solid-angle-right: [XYZAnimation](index.md) :fontawesome-solid-angle-right: **XYZAnimation.get_range**
+# XYZAnimation.get_range
 ::: molecule_lib.XYZAnimation.get_range
     handler: python
     options:
@@ -14,5 +20,3 @@
         docstring_section_style: list
         show_labels: false
 
-
-[Back to Reference](../index.md){ .md-button }

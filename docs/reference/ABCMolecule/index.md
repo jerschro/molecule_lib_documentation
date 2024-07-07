@@ -1,3 +1,9 @@
+---
+hide:
+ - toc
+---
+[:fontawesome-solid-house:](../../index.md) :fontawesome-solid-angle-right: [Reference](../index.md) :fontawesome-solid-angle-right: **ABCMolecule**
+# ABCMolecule 
 ::: molecule_lib.ABCMolecule
     handler: python
     options:
@@ -17,5 +23,3 @@
         merge_init_into_class: true
         members: false
 
-
-[Back to Reference](../index.md){ .md-button }

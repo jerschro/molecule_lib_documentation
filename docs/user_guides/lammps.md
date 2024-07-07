@@ -1,6 +1,5 @@
-## Example Usage
-
-[Back to User Guide](index.md){ .md-button }
+[:fontawesome-solid-house:](../index.md) :fontawesome-solid-angle-right: [User Guides](index.md) :fontawesome-solid-angle-right: **LAMMPS**
+# Example Usage
 
 ``` py title="lammps_example.py"
 from molecule_lib import *
@@ -2996,26 +2995,8 @@ Cartesian
 
 ## LAMMPS Functions
 
-### [read_lammps](../reference/Functions/read_lammps.md)
-::: molecule_lib.read_lammps
-    handler: python
-    options:
-      docstring_style: numpy
-      show_root_heading: true
-      heading_level: 3
-      show_source: false
-      summary: true    
-      docstring_section_style: list
+Click on the links to read API Reference of each LAMMPS function.
 
-### [generate_lammps](../reference/Functions/generate_lammps.md)
-::: molecule_lib.generate_lammps
-    handler: python
-    options:
-      docstring_style: numpy
-      show_root_heading: true
-      heading_level: 3
-      show_source: false
-      summary: true    
-      docstring_section_style: list
+* [read_lammps](../reference/Functions/read_lammps.md)
 
-[Back to User Guide](index.md){ .md-button }
+* [generate_lammps](../reference/Functions/generate_lammps.md)

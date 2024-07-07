@@ -1,15 +1,19 @@
+[:fontawesome-solid-house:](../index.md) :fontawesome-solid-angle-right: **Reference**
 # molecule_lib Reference
+This page displays all public molecule_lib objects, functions and methods.
 
-* [ABCCoord](ABCCoord/ABCCoord.md)
+Below is a list of all public objects, methods and functions.
+
+* [ABCCoord](ABCCoord/index.md)
     * [ABCCoord.line](ABCCoord/line.md)
-* [XYZCoord](XYZCoord/XYZCoord.md)
+* [XYZCoord](XYZCoord/index.md)
     * [XYZCoord.line](XYZCoord/line.md)
-* [LatticeMatrix](LatticeMatrix/LatticeMatrix.md)
+* [LatticeMatrix](LatticeMatrix/index.md)
     * [LatticeMatrix.getabc](LatticeMatrix/getabc.md)
     * [LatticeMatrix.getanglesdeg](LatticeMatrix/getanglesdeg.md)
     * [LatticeMatrix.getanglesrad](LatticeMatrix/getanglesrad.md)
     * [LatticeMatrix.getcommentline](LatticeMatrix/getcommentline.md)
-* [ABCMolecule](ABCMolecule/ABCMolecule.md)
+* [ABCMolecule](ABCMolecule/index.md)
     * [ABCMolecule.add_coords](ABCMolecule/add_coords.md)
     * [ABCMolecule.append](ABCMolecule/append.md)
     * [ABCMolecule.convert](ABCMolecule/convert.md)
@@ -33,7 +37,7 @@
     * [ABCMolecule.to_turbomole](ABCMolecule/to_turbomole.md)
     * [ABCMolecule.to_vasp](ABCMolecule/to_vasp.md)
     * [ABCMolecule.to_xyz](ABCMolecule/to_xyz.md)
-* [XYZMolecule](XYZMolecule/XYZMolecule.md)
+* [XYZMolecule](XYZMolecule/index.md)
     * [XYZMolecule.add_coords](XYZMolecule/add_coords.md)
     * [XYZMolecule.append](XYZMolecule/append.md)
     * [XYZMolecule.convert](XYZMolecule/convert.md)
@@ -54,7 +58,7 @@
     * [XYZMolecule.to_turbomole](XYZMolecule/to_turbomole.md)
     * [XYZMolecule.to_vasp](XYZMolecule/to_vasp.md)
     * [XYZMolecule.to_xyz](XYZMolecule/to_xyz.md)
-* [ABCAnimation](ABCAnimation/ABCAnimation.md)
+* [ABCAnimation](ABCAnimation/index.md)
     * [ABCAnimation.convert](ABCAnimation/convert.md)
     * [ABCAnimation.get](ABCAnimation/get.md)
     * [ABCAnimation.get_range](ABCAnimation/get_range.md)
@@ -64,7 +68,7 @@
     * [ABCAnimation.tail](ABCAnimation/tail.md)
     * [ABCAnimation.to_xdatcar](ABCAnimation/to_xdatcar.md)
     * [ABCAnimation.to_xyz_animation](ABCAnimation/to_xyz_animation.md)
-* [XYZAnimation](XYZAnimation/XYZAnimation.md)
+* [XYZAnimation](XYZAnimation/index.md)
     * [XYZAnimation.convert](XYZAnimation/convert.md)
     * [XYZAnimation.get](XYZAnimation/get.md)
     * [XYZAnimation.get_range](XYZAnimation/get_range.md)

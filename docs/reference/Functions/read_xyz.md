@@ -1,3 +1,9 @@
+---
+hide:
+ - toc
+---
+[:fontawesome-solid-house:](../../index.md) :fontawesome-solid-angle-right: [Reference](../index.md) :fontawesome-solid-angle-right: [Functions](index.md) :fontawesome-solid-angle-right: **read_xyz**
+# read_xyz
 ::: molecule_lib.read_xyz
     handler: python
     options:
@@ -14,5 +20,3 @@
         docstring_section_style: list
         show_labels: false
 
-
-[Back to Reference](../index.md){ .md-button }

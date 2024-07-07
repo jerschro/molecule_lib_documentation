@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+  - toc
+---
 # Welcome to molecule_lib Documentation
 
 This is a library dedicated to manipulating and creating molecular structures using python for theoretical chemistry.
@@ -14,7 +19,7 @@ For Reporting Bugs go to [https://github.com/jerschro/molecule_lib_documentation
 * (Not currently uploaded) `pip install molecule_lib` 
 * (Not currently uploaded) `conda install molecule_lib --channel conda-forge` 
 
-### New molecule_lib? check out the Short Introduction to molecule_lib [here](user_guide/short_intro.md) 
+### New molecule_lib? check out the Short Introduction to molecule_lib [here](user_guides/short_intro.md) 
 
 
 ### Version/Module doc-string (developer info)

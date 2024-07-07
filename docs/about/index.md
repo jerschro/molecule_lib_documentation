@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+[:fontawesome-solid-house:](../index.md) :fontawesome-solid-angle-right: **About**
 # About molecule_lib
 
 ## History of development

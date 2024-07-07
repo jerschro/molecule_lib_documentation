@@ -8,36 +8,39 @@ repo_url: https://github.com/jerschro/molecule_lib_documentation
 nav:
   - Home : index.md
   - About : about/index.md
-  # - Getting Started : getting_started/index.md
-  - User Guide : user_guide/index.md
+  - User Guides :
+    - user_guides/index.md
+    - Read Functions : user_guides/read_functions.md
+    - LAMMPS : user_guides/lammps.md
+    - Short Intro : user_guides/short_intro.md
   - Reference:
-    - Reference : reference/index.md
+    - reference/index.md
     - ABCCoord :
-      - ABCCoord : reference/ABCCoord/ABCCoord.md
+      - reference/ABCCoord/index.md
       - ABCCoord.line : reference/ABCCoord/line.md
     - XYZCoord :
-      - XYZCoord : reference/XYZCoord/XYZCoord.md
+      - reference/XYZCoord/index.md
       - XYZCoord.line : reference/XYZCoord/line.md
     - LatticeMatrix :
-      - LatticeMatrix : reference/LatticeMatrix/LatticeMatrix.md
+      - reference/LatticeMatrix/index.md
       - LatticeMatrix.getabc : reference/LatticeMatrix/getabc.md
       - LatticeMatrix.getanglesdeg : reference/LatticeMatrix/getanglesdeg.md
       - LatticeMatrix.getanglesrad : reference/LatticeMatrix/getanglesrad.md
       - LatticeMatrix.getcommentline : reference/LatticeMatrix/getcommentline.md
     - ABCMolecule :
-      - ABCMolecule : reference/ABCMolecule/ABCMolecule.md
+      - reference/ABCMolecule/index.md
       - ABCMolecule.add_coords : reference/ABCMolecule/add_coords.md
       - ABCMolecule.append : reference/ABCMolecule/append.md
       - ABCMolecule.convert : reference/ABCMolecule/convert.md
       - ABCMolecule.delete : reference/ABCMolecule/delete.md
-      - ABCMolecule.freeze_atoms : reference/ABCMolecule/freeze_atoms.md    
+      - ABCMolecule.freeze_atoms : reference/ABCMolecule/freeze_atoms.md
       - ABCMolecule.generate_supercell : reference/ABCMolecule/generate_supercell.md
       - ABCMolecule.get : reference/ABCMolecule/get.md
       - ABCMolecule.get_atoms : reference/ABCMolecule/get_atoms.md
-      - ABCMolecule.get_centroid : reference/ABCMolecule/get_centroid.md    
+      - ABCMolecule.get_centroid : reference/ABCMolecule/get_centroid.md
       - ABCMolecule.head : reference/ABCMolecule/head.md
       - ABCMolecule.info : reference/ABCMolecule/info.md
-      - ABCMolecule.manipulate : reference/ABCMolecule/manipulate.md        
+      - ABCMolecule.manipulate : reference/ABCMolecule/manipulate.md
       - ABCMolecule.move : reference/ABCMolecule/move.md
       - ABCMolecule.print : reference/ABCMolecule/print.md
       - ABCMolecule.rotate : reference/ABCMolecule/rotate.md
@@ -46,55 +49,55 @@ nav:
       - ABCMolecule.switch_to_direct : reference/ABCMolecule/switch_to_direct.md
       - ABCMolecule.tail : reference/ABCMolecule/tail.md
       - ABCMolecule.to_lammps : reference/ABCMolecule/to_lammps.md
-      - ABCMolecule.to_turbomole : reference/ABCMolecule/to_turbomole.md    
+      - ABCMolecule.to_turbomole : reference/ABCMolecule/to_turbomole.md
       - ABCMolecule.to_vasp : reference/ABCMolecule/to_vasp.md
       - ABCMolecule.to_xyz : reference/ABCMolecule/to_xyz.md
     - XYZMolecule :
-      - XYZMolecule : reference/XYZMolecule/XYZMolecule.md
-      - XYZMolecule.add_coords : reference/XYZMolecule/add_coords.md        
+      - reference/XYZMolecule/index.md
+      - XYZMolecule.add_coords : reference/XYZMolecule/add_coords.md
       - XYZMolecule.append : reference/XYZMolecule/append.md
       - XYZMolecule.convert : reference/XYZMolecule/convert.md
       - XYZMolecule.delete : reference/XYZMolecule/delete.md
       - XYZMolecule.generate_supercell : reference/XYZMolecule/generate_supercell.md
       - XYZMolecule.get : reference/XYZMolecule/get.md
       - XYZMolecule.get_atoms : reference/XYZMolecule/get_atoms.md
-      - XYZMolecule.get_centroid : reference/XYZMolecule/get_centroid.md    
+      - XYZMolecule.get_centroid : reference/XYZMolecule/get_centroid.md
       - XYZMolecule.head : reference/XYZMolecule/head.md
       - XYZMolecule.info : reference/XYZMolecule/info.md
-      - XYZMolecule.manipulate : reference/XYZMolecule/manipulate.md        
+      - XYZMolecule.manipulate : reference/XYZMolecule/manipulate.md
       - XYZMolecule.move : reference/XYZMolecule/move.md
       - XYZMolecule.print : reference/XYZMolecule/print.md
       - XYZMolecule.rotate : reference/XYZMolecule/rotate.md
       - XYZMolecule.sort : reference/XYZMolecule/sort.md
       - XYZMolecule.tail : reference/XYZMolecule/tail.md
       - XYZMolecule.to_lammps : reference/XYZMolecule/to_lammps.md
-      - XYZMolecule.to_turbomole : reference/XYZMolecule/to_turbomole.md    
+      - XYZMolecule.to_turbomole : reference/XYZMolecule/to_turbomole.md
       - XYZMolecule.to_vasp : reference/XYZMolecule/to_vasp.md
       - XYZMolecule.to_xyz : reference/XYZMolecule/to_xyz.md
     - ABCAnimation :
-      - ABCAnimation : reference/ABCAnimation/ABCAnimation.md
+      - reference/ABCAnimation/index.md
       - ABCAnimation.convert : reference/ABCAnimation/convert.md
       - ABCAnimation.get : reference/ABCAnimation/get.md
-      - ABCAnimation.get_range : reference/ABCAnimation/get_range.md        
+      - ABCAnimation.get_range : reference/ABCAnimation/get_range.md
       - ABCAnimation.head : reference/ABCAnimation/head.md
       - ABCAnimation.info : reference/ABCAnimation/info.md
       - ABCAnimation.print : reference/ABCAnimation/print.md
       - ABCAnimation.tail : reference/ABCAnimation/tail.md
-      - ABCAnimation.to_xdatcar : reference/ABCAnimation/to_xdatcar.md      
+      - ABCAnimation.to_xdatcar : reference/ABCAnimation/to_xdatcar.md
       - ABCAnimation.to_xyz_animation : reference/ABCAnimation/to_xyz_animation.md
     - XYZAnimation :
-      - XYZAnimation : reference/XYZAnimation/XYZAnimation.md
+      - reference/XYZAnimation/index.md
       - XYZAnimation.convert : reference/XYZAnimation/convert.md
       - XYZAnimation.get : reference/XYZAnimation/get.md
-      - XYZAnimation.get_range : reference/XYZAnimation/get_range.md        
+      - XYZAnimation.get_range : reference/XYZAnimation/get_range.md
       - XYZAnimation.head : reference/XYZAnimation/head.md
       - XYZAnimation.info : reference/XYZAnimation/info.md
       - XYZAnimation.print : reference/XYZAnimation/print.md
       - XYZAnimation.tail : reference/XYZAnimation/tail.md
-      - XYZAnimation.to_xdatcar : reference/XYZAnimation/to_xdatcar.md      
+      - XYZAnimation.to_xdatcar : reference/XYZAnimation/to_xdatcar.md
       - XYZAnimation.to_xyz_animation : reference/XYZAnimation/to_xyz_animation.md
     - Functions :
-      - Functions : reference/Functions/index.md
+      - reference/Functions/index.md
       - generate_lammps : reference/Functions/generate_lammps.md
       - read_cif : reference/Functions/read_cif.md
       - read_lammps : reference/Functions/read_lammps.md
@@ -104,41 +107,25 @@ nav:
       - read_xdatcar : reference/Functions/read_xdatcar.md
       - read_xsf : reference/Functions/read_xsf.md
       - read_xyz : reference/Functions/read_xyz.md
-      - read_xyz_animation : reference/Functions/read_xyz_animation.md   
+      - read_xyz_animation : reference/Functions/read_xyz_animation.md
+
+
 
 theme:
   name: material
   features:
-    - announce.dismiss
-    # - content.action.edit
-    # - content.action.view
-    - content.code.annotate
-    - content.code.copy
-    # - content.code.select
-    # - content.footnote.tooltips
-    - content.tabs.link
-    - content.tooltips
-    # - header.autohide
-    # - navigation.expand
-    - navigation.footer
-    # - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-    # - navigation.prune
-    - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.instant
-    - navigation.top
-    - navigation.tracking
-    - navigate.top
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
-    # - toc.integrate
+    - navigation.instant #for better loading
+    - navigation.instant.progress #for better loading
+    - navigation.tabs #for tabs of nav folders in header
+    # - navigation.sections #groups pages by nav folder #not needed here
+    # - navigation.expand #ability for navigation sidebar to expand
+    - navigation.indexes #for index pages being clickable in navigation sidebar # must have index.md in folder and not labeled
+    - navigation.top #adds scroll to top button when you scroll down
+    # - toc.integrate #add toc to navigation panel #says its not compatible with navigation.indexes
+    # - content.code.annotate #for code blocks
+    - content.code.copy #for code blocks
+    # - navigation.prune #something about optimizing navigation sidebar for 1000 + pages
+    
   language: en
   palette:
     - media: "(prefers-color-scheme)"
@@ -168,14 +155,11 @@ plugins:
   - mkdocstrings
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - attr_list
+  - attr_list # for fontawesome
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji # for fontawesome
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg # for fontawesome
+  - pymdownx.superfences # for code blocks
 
 extra:
   social:

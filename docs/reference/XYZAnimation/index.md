@@ -1,4 +1,10 @@
-::: molecule_lib.XYZMolecule
+---
+hide:
+ - toc
+---
+[:fontawesome-solid-house:](../../index.md) :fontawesome-solid-angle-right: [Reference](../index.md) :fontawesome-solid-angle-right: **XYZAnimation**
+# XYZAnimation 
+::: molecule_lib.XYZAnimation
     handler: python
     options:
         docstring_style: numpy
@@ -17,5 +23,3 @@
         merge_init_into_class: true
         members: false
 
-
-[Back to Reference](../index.md){ .md-button }
