@@ -10,9 +10,11 @@ nav:
   - About : about/index.md
   - User Guides :
     - user_guides/index.md
+    - Short Intro : user_guides/short_intro.md
     - Read Functions : user_guides/read_functions.md
     - LAMMPS : user_guides/lammps.md
-    - Short Intro : user_guides/short_intro.md
+    - Clusters : user_guides/clusters.md
+    - Complexes : user_guides/complexes.md
   - Reference:
     - reference/index.md
     - ABCCoord :
@@ -34,6 +36,7 @@ nav:
       - ABCMolecule.convert : reference/ABCMolecule/convert.md
       - ABCMolecule.delete : reference/ABCMolecule/delete.md
       - ABCMolecule.freeze_atoms : reference/ABCMolecule/freeze_atoms.md
+      - ABCMolecule.generate_cluster : reference/ABCMolecule/generate_cluster.md
       - ABCMolecule.generate_supercell : reference/ABCMolecule/generate_supercell.md
       - ABCMolecule.get : reference/ABCMolecule/get.md
       - ABCMolecule.get_atoms : reference/ABCMolecule/get_atoms.md
@@ -49,6 +52,9 @@ nav:
       - ABCMolecule.switch_to_direct : reference/ABCMolecule/switch_to_direct.md
       - ABCMolecule.tail : reference/ABCMolecule/tail.md
       - ABCMolecule.to_lammps : reference/ABCMolecule/to_lammps.md
+      - ABCMolecule.to_orca : reference/ABCMolecule/to_orca.md
+      - ABCMolecule.to_qe : reference/ABCMolecule/to_qe.md
+      - ABCMolecule.to_rdkit_mol : reference/ABCMolecule/to_rdkit_mol.md
       - ABCMolecule.to_turbomole : reference/ABCMolecule/to_turbomole.md
       - ABCMolecule.to_vasp : reference/ABCMolecule/to_vasp.md
       - ABCMolecule.to_xyz : reference/ABCMolecule/to_xyz.md
@@ -57,7 +63,10 @@ nav:
       - XYZMolecule.add_coords : reference/XYZMolecule/add_coords.md
       - XYZMolecule.append : reference/XYZMolecule/append.md
       - XYZMolecule.convert : reference/XYZMolecule/convert.md
+      - XYZMolecule.create_unitcell : reference/XYZMolecule/create_unitcell.md
+      - XYZMolecule.cut_polygon : reference/XYZMolecule/cut_polygon.md
       - XYZMolecule.delete : reference/XYZMolecule/delete.md
+      - XYZMolecule.generate_cluster : reference/XYZMolecule/generate_cluster.md
       - XYZMolecule.generate_supercell : reference/XYZMolecule/generate_supercell.md
       - XYZMolecule.get : reference/XYZMolecule/get.md
       - XYZMolecule.get_atoms : reference/XYZMolecule/get_atoms.md
@@ -71,6 +80,9 @@ nav:
       - XYZMolecule.sort : reference/XYZMolecule/sort.md
       - XYZMolecule.tail : reference/XYZMolecule/tail.md
       - XYZMolecule.to_lammps : reference/XYZMolecule/to_lammps.md
+      - XYZMolecule.to_orca : reference/XYZMolecule/to_orca.md
+      - XYZMolecule.to_qe : reference/XYZMolecule/to_qe.md
+      - XYZMolecule.to_rdkit_mol : reference/XYZMolecule/to_rdkit_mol.md
       - XYZMolecule.to_turbomole : reference/XYZMolecule/to_turbomole.md
       - XYZMolecule.to_vasp : reference/XYZMolecule/to_vasp.md
       - XYZMolecule.to_xyz : reference/XYZMolecule/to_xyz.md
@@ -108,8 +120,7 @@ nav:
       - read_xsf : reference/Functions/read_xsf.md
       - read_xyz : reference/Functions/read_xyz.md
       - read_xyz_animation : reference/Functions/read_xyz_animation.md
-
-
+      
 
 theme:
   name: material
@@ -160,6 +171,10 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji # for fontawesome
       emoji_generator: !!python/name:material.extensions.emoji.to_svg # for fontawesome
   - pymdownx.superfences # for code blocks
+  - md_in_html
+  - pymdownx.tabbed: #for tabbed code blocks
+      alternate_style: true #for tabbed code blocks
+
 
 extra:
   social:

@@ -1,7 +1,7 @@
 [:fontawesome-solid-house:](../index.md) :fontawesome-solid-angle-right: [User Guides](index.md) :fontawesome-solid-angle-right: **Read Functions**
 
 
-# molecule_lib Functions
+# molecule_lib Read Functions
 These functions will read a file and return the respective object if the file fufills the filetype requirements. See the [Reference/Functions](../reference/Functions/index.md) page for more detail.
 
 ## molecule_lib Functions that return...

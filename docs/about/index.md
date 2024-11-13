@@ -22,8 +22,20 @@ There is a lack of ways to manipulate molecular files using scripts and Jeremy h
 * Simply edit unitcell parameters. (Work in progress)
 * Ability to reorder the atoms in a molecular structure file.
 * Take popular DFT calculation output animations and convert to a filetype that popular molecular visualization programs can read.
+* Ability to automate the creation of cluster models for electronic structure DFT calculations on surfaces.
 
 ## Mission
 
 molecule_lib aims to lead the way in automating molecular file creation for molecular modelers. 
 It also aims to be a resource for those learning object oriented programming and python type hinting as the implementation of oop is fairly simple. The library hopes to be a resource created by a molecular modeler, for molecular modelers to help make the work efficient and more productive.
+
+## Citing molecule_lib
+
+molecule_lib is open source licensed under the MIT license. 
+
+Please cite molecule_lib using the citation style below:
+
+* Authors: Jeremy Schroeder, Adelia Aquino, Michelle Pantoya, Daniel Tunega
+* Title: Introducing molecule_lib: a python library dedicated to automate computational chemistry model creation and manipulation.
+* Journal: To Be Determined
+* Date Published: To Be Determined

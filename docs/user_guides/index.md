@@ -14,4 +14,6 @@ To get more detail, look at the [API Reference](../reference/index.md) page.
 * [Short Introduction to molecule_lib](short_intro.md)
 * [Read Functions](read_functions.md)
 * [lammps functionality](lammps.md)
+* [Complex Creation](complexes.md)
+* [Cluster Creation](clusters.md)
 * more coming soon!
