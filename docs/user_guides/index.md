@@ -16,4 +16,5 @@ To get more detail, look at the [API Reference](../reference/index.md) page.
 * [lammps functionality](lammps.md)
 * [Complex Creation](complexes.md)
 * [Cluster Creation](clusters.md)
+* [Edit Vacuum](edit_vacuum.md)
 * more coming soon!

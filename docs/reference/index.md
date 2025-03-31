@@ -18,6 +18,7 @@ Below is a list of all public objects, methods and functions.
     * [ABCMolecule.append](ABCMolecule/append.md)
     * [ABCMolecule.convert](ABCMolecule/convert.md)
     * [ABCMolecule.delete](ABCMolecule/delete.md)
+    * [ABCMolecule.edit_unitcell](ABCMolecule/edit_unitcell.md)
     * [ABCMolecule.freeze_atoms](ABCMolecule/freeze_atoms.md)
     * [ABCMolecule.generate_cluster](ABCMolecule/generate_cluster.md)
     * [ABCMolecule.generate_supercell](ABCMolecule/generate_supercell.md)

@@ -15,6 +15,7 @@ nav:
     - LAMMPS : user_guides/lammps.md
     - Clusters : user_guides/clusters.md
     - Complexes : user_guides/complexes.md
+    - Edit Vacuum : user_guides/edit_vacuum.md
   - Reference:
     - reference/index.md
     - ABCCoord :
@@ -35,6 +36,7 @@ nav:
       - ABCMolecule.append : reference/ABCMolecule/append.md
       - ABCMolecule.convert : reference/ABCMolecule/convert.md
       - ABCMolecule.delete : reference/ABCMolecule/delete.md
+      - ABCMolecule.edit_unitcell : reference/ABCMolecule/edit_unitcell.md
       - ABCMolecule.freeze_atoms : reference/ABCMolecule/freeze_atoms.md
       - ABCMolecule.generate_cluster : reference/ABCMolecule/generate_cluster.md
       - ABCMolecule.generate_supercell : reference/ABCMolecule/generate_supercell.md
@@ -120,7 +122,7 @@ nav:
       - read_xsf : reference/Functions/read_xsf.md
       - read_xyz : reference/Functions/read_xyz.md
       - read_xyz_animation : reference/Functions/read_xyz_animation.md
-      
+
 
 theme:
   name: material
