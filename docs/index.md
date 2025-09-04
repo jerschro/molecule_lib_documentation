@@ -54,11 +54,23 @@ Click here for the [API Reference](reference/index.md) page.
 
 ## To install molecule_lib 
 
-* Copy source code into conda/lib/site-packages/molecule_lib or conda/envs/lib/site-packages/molecule_lib
-* Have source code in folder molecule_lib located in repository where code you are importing molecule_lib
-* (Not currently uploaded) `pip install molecule_lib` 
-* (Not currently uploaded) `conda install molecule_lib --channel conda-forge` 
+You can install the library directly from PyPI:
 
+```bash
+pip install molecule_lib
+
+```
+
+Requirements: Python 3.10 or later and Numpy. RDKit is optional but suggested.
+
+RDKit is an optional dependency and can be installed separately via conda or pip:
+
+```bash
+conda install -c conda-forge rdkit
+# or
+pip install rdkit
+
+```
 
 <!-- ### Version/Module doc-string (developer info)
 ::: molecule_lib

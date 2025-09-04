@@ -31,7 +31,7 @@ It also aims to be a resource for those learning object oriented programming and
 
 ## Citing molecule_lib
 
-molecule_lib is open source licensed under the MIT license. 
+molecule_lib is open source licensed under the GNU GPL-3.0-or-later license. 
 
 Please cite molecule_lib using the citation style below:
 
